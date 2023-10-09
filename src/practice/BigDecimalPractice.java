@@ -1,4 +1,4 @@
-package hackerrank;
+package practice;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
