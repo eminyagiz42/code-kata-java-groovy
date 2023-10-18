@@ -11,6 +11,26 @@ public class PivotIndex {
     }
 
     public static int pivotIndex(int[] nums) {
+        ///int totalSum = IntStream.of(nums).sum(); //4ms
+        int totalSum = 0;
+        for (int num : nums) { //1ms
+            totalSum += num;
+        }
+        int sumLeft = 0;
+        int sumRight = totalSum;
+        for (int i = 0; i < nums.length; i++) {
+            if (i > 0) {
+                sumLeft += nums[i - 1];
+            }
+            sumRight -= nums[i];
+            if (sumLeft == sumRight) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static int pivotIndexSlow(int[] nums) { //378ms
         int sumLeft = 0;
         int sumRight = 0;
         for (int i = 0; i < nums.length; i++) {
@@ -28,6 +48,5 @@ public class PivotIndex {
         }
         return -1;
     }
-
 }
 
