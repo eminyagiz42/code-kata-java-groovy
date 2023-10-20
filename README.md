@@ -1,1 +1,1 @@
-This is personal # javaKata. I will practice, follow my curiousity or solve some leetcode questions.
+This is personal # javaKata. I am going to practice, follow my curiousity and solve some leetcode questions.
