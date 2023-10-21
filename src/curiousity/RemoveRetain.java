@@ -24,8 +24,10 @@ public class RemoveRetain {
         /** List<String> stringList1 = Arrays.asList("a", "b", "c");
          * stringList1.removeAll(stringList2); --> UnsupportedOperationException
          * because
-         * When you use Arrays.asList, you get a list backed by the actual array passed in with restricted functionality.
-         *  If you want a fully modifiable list you have to create a new list. For example:
+         *  When you use Arrays.asList, you get a list backed by the actual array passed in with restricted functionality.
+         *  If you want a fully modifiable list you have to create a new list like this above.
+         * For example:
+         *  new ArrayList<>(Arrays.asList("a", "b", "c"));
           */
     }
 }
