@@ -13,6 +13,8 @@ public class LoopPlusPlus {
                 i = 5
          */
 
+        System.out.println("");
+
         for (int j = 0; j < 5; j++) {
             System.out.println("j = " + j++);
         }
@@ -22,5 +24,19 @@ public class LoopPlusPlus {
                 j = 2
                 j = 4
          */
+
+        System.out.println();
+
+        // Alternatively
+        for (int k = 0; k < 5; k = k + 2) {
+            System.out.println("k = " +  k);
+        }
+
+        System.out.println();
+
+        for (int l = 1; l < 5; l = l + 2) {
+            System.out.println("l = " +  l);
+        }
+
     }
 }
