@@ -2,7 +2,7 @@ package practice;
 
 import java.util.ArrayList;
 
-public class JavaKata {
+public class StringPairPractice {
 
 	public static void main(String[] args) {
 
@@ -34,5 +34,16 @@ public class JavaKata {
 			System.out.println(sum);
 		}
 	}
+
+	/*
+        int sum = 1;
+        System.out.print(sum);
+        for (int i =1 ; i < pair_left.length; i++) {
+            if((pair_left[i] + " " + pair_right[i]) == (pair_left[i-1] + " " + pair_right[i-1])){
+            	sum++;
+                System.out.print(sum);
+            }
+        }
+        */
 
 }

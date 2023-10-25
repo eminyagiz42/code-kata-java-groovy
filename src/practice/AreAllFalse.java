@@ -4,7 +4,6 @@ public class AreAllFalse {
 
 	public static void main(String[] args) {
 		
-			
 		boolean a = false;
 		boolean b = true;
 		boolean c = true;
@@ -16,11 +15,9 @@ public class AreAllFalse {
 			System.out.println("FALSE");
 		}
 
-
-		if (areAllFalse(a,b,c,d)) {
+		if (areAllFalse(a, b, c, d)) {
 			System.out.println("THE Result");
 		}
-		
 	}
 	
 	public static boolean areAllFalse(boolean a, boolean b, boolean c, boolean d){

@@ -1,23 +1,17 @@
-package practice;
+package java8practice;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
 
-public class TagContent{
+public class TagContentPractice {
+
 	public static void main(String[] args){
-		
 
 		String a = "<h1>Nayeem loves counseling</h1>";
 		String b= "<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>";
 		String c = "<Amee>safat codes like a ninja</amee>";		
 		String d = "<SA premium>Imtiaz has a secret crush</SA premium>";
 
-	
-	
 		String a1 = "<h1>some</h1>";
 		String a2 = "<h1>had<h1>public</h1></h1>";
 		String a3 = "<h1>had<h1>public</h1515></h1>";
@@ -40,26 +34,18 @@ public class TagContent{
 	public static void printWithoutTag(String textWithTag ) {
 		
 		String text = textWithTag.replaceAll("<","").replaceAll(">","").replaceAll("/","");
-		
 		if(text.isEmpty()) {
 			System.out.println("None");
 		}else {
 			List<String> selectedTag = new ArrayList();
-			
 			int i = textWithTag.indexOf("</");
 			String[] a =  {textWithTag.substring(0, i), textWithTag.substring(i)};
-			
 			for(String t : a) {
-				
-				
 				int x = t.lastIndexOf(">");
 				String[] y =  {t.substring(0, x), t.substring(x)};
-				
 				for(String m : y) {
-					
 					System.out.println(m);
 				}
-				
 				//System.out.println(y[y.length-1]);
 			}
 			/*

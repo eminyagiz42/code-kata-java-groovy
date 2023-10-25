@@ -1,12 +1,11 @@
-package practice;
+package java8practice;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class PriceRangeSort {
+public class PriceRangeSortPractice {
 
 	public static void main(String[] args) {
 		
@@ -27,7 +26,5 @@ public class PriceRangeSort {
 		result.entrySet().stream().sorted(Collections.reverseOrder((Map.Entry.comparingByKey())));
 		 
 		System.out.println(result);
-		
 	}
-
 }

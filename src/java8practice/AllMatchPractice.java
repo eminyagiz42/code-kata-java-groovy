@@ -1,20 +1,18 @@
-package practice;
+package java8practice;
 
+import java.util.ArrayList;
+import java.util.List;
 
-import java.util.*;
-import java.io.*;
+class AllMatchPractice {
 
-class MapPractice{
-	public static void main(String []argh)
-	{
-      
-		
+	public static void main(String []argh) {
+
 		List<String> listo = new ArrayList<String>();
-		
-		listo.add("");listo.add("");listo.add("");
-		
-		System.out.print(listo.stream().allMatch(order -> order.isEmpty()));
-		
+		listo.add("");
+		listo.add("");
+		listo.add("");
+		System.out.print(listo.stream().allMatch(String::isEmpty));
+
 		/*
       Map<String,Integer> nMap = new HashMap<String,Integer>();
 		Scanner in = new Scanner(System.in);
@@ -27,7 +25,7 @@ class MapPractice{
             nMap.put(name, phone);
 			in.nextLine();
 		}
-		
+
         Set<String> set = nMap.keySet();
         for (String key : set) {
             System.out.println(key + "=" + nMap.get(key));
@@ -35,7 +33,3 @@ class MapPractice{
         */
 	}
 }
-
-
-
-

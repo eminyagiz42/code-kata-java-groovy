@@ -1,8 +1,8 @@
-package practice;
+package java8practice;
 
 import java.util.stream.IntStream;
 
-public class Combination {
+public class CombinationPractice {
 
     public static void main (String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
@@ -10,9 +10,7 @@ public class Combination {
         int n = arr.length;
         printCombination(arr, n, r);
     }
-    public static void combinationUtil(int[] arr, int[] data, int start,
-                                int end, int index, int r) {
-
+    public static void combinationUtil(int[] arr, int[] data, int start, int end, int index, int r) {
         if (index == r) {
             final int sum = IntStream.of(data).sum() / 4;
             System.out.println(sum);

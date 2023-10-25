@@ -1,7 +1,6 @@
-package practice;
+package java8practice;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,8 +19,7 @@ public class StreamFilterPractice {
 		arrayList.add("3");
 		arrayList.add("5");
 		
-		List<String> newArray = arrayList.stream().filter(f -> f == "3").collect(Collectors.toList());
-
+		List<String> newArray = arrayList.stream().filter(f -> f.equals("3")).collect(Collectors.toList());
 		
 		System.out.println(newArray);
 	}

@@ -6,8 +6,6 @@ public class NoDoubleNoNegative {
 
 		Double getAvailableQuantity = 7.9;
 
-
-		
 		System.out.print( extracted(getAvailableQuantity));
 	}
 
