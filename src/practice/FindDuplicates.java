@@ -1,15 +1,12 @@
 package practice;
 
 import util.Constant;
-import util.Impl.CommandImpl;
-import util.Utilities;
 
 public class FindDuplicates {
 
     public static void main(String[] args) {
 
         String sentence1 = "How many duplicates are there ?";
-        Utilities.callCommand(new CommandImpl(), findDuplicates(Constant.VERY_LONG_SENTENCE), System.currentTimeMillis());
 
         long start = System.currentTimeMillis();
         System.out.println(findDuplicates2(Constant.VERY_LONG_SENTENCE));
