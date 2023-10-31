@@ -10,7 +10,8 @@ public class TagRegexPractice {
 	      Scanner in = new Scanner(System.in);
 	      int t = Integer.parseInt(in.nextLine());
 	      
-	      while(t-->0){
+	      while(t > 0){
+			  t--;
 	          String line = in.nextLine();
 	         
 	          Matcher m = Pattern.compile("<(.+)>(([^<>]+))</\\1>").matcher(line);

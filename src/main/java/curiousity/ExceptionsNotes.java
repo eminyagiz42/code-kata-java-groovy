@@ -1,6 +1,5 @@
 package curiousity;
 
-import com.sun.corba.se.impl.io.TypeMismatchException;
 
 public class ExceptionsNotes {
 
@@ -32,8 +31,8 @@ public class ExceptionsNotes {
 
         try{
             //TODO
-        }catch(TypeMismatchException ex) {
-            System.out.printf("TypeMismatchException occured, the reason is %s ", ex.getMessage());
+        }catch(Exception ex) {
+            System.out.printf("Exception occured, the reason is %s ", ex.getMessage());
         }
 
         try{

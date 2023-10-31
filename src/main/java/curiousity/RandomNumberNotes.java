@@ -2,7 +2,7 @@ package curiousity;
 
 import java.util.Random;
 
-public class RandomNumber {
+public class RandomNumberNotes {
 
     public static void main(String[] args) {
         

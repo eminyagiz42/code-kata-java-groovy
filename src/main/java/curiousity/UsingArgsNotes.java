@@ -1,6 +1,6 @@
 package curiousity;
 
-public class UsingArgs {
+public class UsingArgsNotes {
 
     public static void main(String[] args) {
 

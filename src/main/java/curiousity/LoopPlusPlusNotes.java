@@ -1,6 +1,6 @@
 package curiousity;
 
-public class LoopPlusPlus {
+public class LoopPlusPlusNotes {
 
     public static void main(String[] args) {
 

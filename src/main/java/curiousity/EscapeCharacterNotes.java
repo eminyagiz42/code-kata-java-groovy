@@ -1,6 +1,6 @@
 package curiousity;
 
-public class EscapeCharacters {
+public class EscapeCharacterNotes {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package curiousity;
 
-public class DataTypes {
+public class DataTypeNotes {
     public static void main(String[] args) {
         //Primitive Types
         byte a = 127; // Byte.MAX_VALUE

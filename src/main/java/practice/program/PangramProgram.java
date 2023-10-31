@@ -1,10 +1,10 @@
-package practice;
+package practice.program;
 
 import util.Constant;
 
 import java.util.HashSet;
 
-public class PangramPractice {
+public class PangramProgram {
 
     public static final int NUMBER_OF_LETTERS_IN_ALPHABET = 26;
 

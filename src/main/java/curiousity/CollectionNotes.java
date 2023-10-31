@@ -2,7 +2,7 @@ package curiousity;
 
 import java.util.ArrayList;
 
-public class CollectionTypes {
+public class CollectionNotes {
 
     public static void main(String[] args) {
         arrayPractice();

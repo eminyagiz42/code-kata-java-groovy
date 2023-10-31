@@ -1,6 +1,6 @@
 package curiousity;
 
-public class SwitchDo {
+public class SwitchDoNotes {
 
     public static void main(String[] args) {
         int day = 4;

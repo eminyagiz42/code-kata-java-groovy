@@ -1,12 +1,12 @@
-package curiousity;
+package practice.program;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class OldSwing {
+public class OldSwingProgram {
 
-    public OldSwing() {
+    public OldSwingProgram() {
         JFrame jFrame = new JFrame();
         jFrame.setVisible(true);
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -69,7 +69,7 @@ public class OldSwing {
     }
 
     public static void main(String[] args) {
-        new OldSwing();
+        new OldSwingProgram();
     }
 
 
