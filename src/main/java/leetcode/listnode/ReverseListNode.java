@@ -1,6 +1,6 @@
-package leetcode.ListNodes;
+package leetcode.listnode;
 
-public class DeleteMiddleNode {
+public class ReverseListNode {
 
     /**
      * Definition for singly-linked list.
@@ -14,30 +14,44 @@ public class DeleteMiddleNode {
      */
 
     public static void main(String[] args) {
-        //https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list
 
-        printList(deleteMiddle(createListNode())); // 1,3,4,7,1,2,6
+        //https://leetcode.com/problems/reverse-linked-list
+
+        printList(reverseList(createListNode0())); // 1,3,4,7,1,2,6
     }
 
-    public static ListNode deleteMiddle(ListNode head) {
-        int middle = getLength(head)  / 2 ;
-        return deleteNode(head, middle);
-    }
-
-    public static ListNode deleteNode(ListNode head, int middle) {
-        if (head == null)
-            return null;
-        if (head.next == null) {
+    public static ListNode reverseList(ListNode head) {
+        if (head == null) {
             return null;
         }
+        int length = getLength(head);
+        int[] values = reverse(getValues(head, length));
+
         ListNode temp = head;
-        while (middle > 1) {
-            middle--;
+        for (int v :values) {
+            head.val = v;
             head = head.next;
         }
-        head.next = head.next.next;
-
         return temp;
+    }
+
+    public static int[] reverse(int[] validData) {
+        for (int i = 0; i < validData.length / 2; i++) {
+            int temp = validData[i];
+            validData[i] = validData[validData.length - i - 1];
+            validData[validData.length - i - 1] = temp;
+        }
+        return validData;
+    }
+
+    public static int[] getValues(ListNode head, int length) {
+        int[] values = new int[length];
+        int index = 0;
+        while (head != null) {
+            values[index++] = head.val;
+            head = head.next;
+        }
+        return values;
     }
 
     public static int getLength(ListNode head) {
@@ -83,7 +97,6 @@ public class DeleteMiddleNode {
         ListNode node3 = new ListNode(7, node4);
         ListNode node2 = new ListNode(4, node3);
         ListNode node1 = new ListNode(3, node2);
-        ListNode head = new ListNode(1, node1);
-        return head;
+        return new ListNode(1, node1);
     }
 }
