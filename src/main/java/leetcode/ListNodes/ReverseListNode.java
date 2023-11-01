@@ -97,7 +97,6 @@ public class ReverseListNode {
         ListNode node3 = new ListNode(7, node4);
         ListNode node2 = new ListNode(4, node3);
         ListNode node1 = new ListNode(3, node2);
-        ListNode head = new ListNode(1, node1);
-        return head;
+        return new ListNode(1, node1);
     }
 }
