@@ -1,6 +1,6 @@
-package curiousity;
+package curiousity.tricks;
 
-public class BestPracticeNotes {
+public class LargerNumber {
 
     public static final int EXAMPLE_CONSTANT_VARIABLE = 2;
 
@@ -16,7 +16,7 @@ public class BestPracticeNotes {
         //better solution - short if
         largerNum = a > b ? a : b;
 
-        //better solution - using existing library
+        //Even better solution - using existing library
         largerNum = Math.max(a,b);
 
 

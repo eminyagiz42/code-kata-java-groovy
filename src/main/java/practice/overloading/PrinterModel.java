@@ -1,4 +1,4 @@
-package practice;
+package practice.overloading;
 
 class PrinterModel {
 

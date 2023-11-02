@@ -1,4 +1,4 @@
-package tricks;
+package curiousity.tricks;
 
 public class NumberInSentence {
 
