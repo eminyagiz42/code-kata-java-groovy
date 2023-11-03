@@ -25,6 +25,7 @@ _Check Later._
 - [awsome for beginners](https://github.com/MunGell/awesome-for-beginners#java)
 - [realworld docs](https://realworld-docs.netlify.app/docs/intro/)
 - [Spring guides](https://spring.io/guides)
+- [Spring mvc tutorial](https://java2blog.com/spring-mvc-tutorial/)
 - [Github microservices](https://github.com/SaiUpadhyayula/spring-boot-microservices)
 - [Amigoscode Data Structures](https://youtu.be/8MmMm2-kJV8?si=r-Rr9wqQ_g4sHZdY)
 - [Medium javinpaul java roadmap](https://medium.com/javarevisited/the-java-programmer-roadmap-f9db163ef2c2)
