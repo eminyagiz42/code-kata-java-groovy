@@ -1,8 +1,8 @@
-package hackerrank;
+package hackerrank.usename;
 
 
 class UsernameValidator {
-	public static final String regularExpression = "^[[A-Z][a-z]][[A-Za-z0-9_]]{7,29}$";
+	public static final String REGULAR_EXPRESSION = "^[[A-Z][a-z]][[A-Za-z0-9_]]{7,29}$";
 }
 
 /*

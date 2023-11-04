@@ -6,7 +6,7 @@ public class TerminologyNotes {
 
         String fruit = "mango"; //initialization
 
-        String vegtable; //declaration
+        String vegetable; //declaration
 
         fruit = "grape"; // assignment
     }

@@ -1,4 +1,4 @@
-package hackerrank;
+package hackerrank.usename;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class ValidUsernameRegularExpression {
         int n = Integer.parseInt(scan.nextLine());
         while (n-- != 0) {
             String userName = scan.nextLine();
-            if (userName.matches(UsernameValidator.regularExpression)) {
+            if (userName.matches(UsernameValidator.REGULAR_EXPRESSION)) {
                 System.out.println("Valid");
             } else {
                 System.out.println("Invalid");

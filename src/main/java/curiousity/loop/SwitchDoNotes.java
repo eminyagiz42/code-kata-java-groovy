@@ -1,4 +1,4 @@
-package curiousity;
+package curiousity.loop;
 
 public class SwitchDoNotes {
 
