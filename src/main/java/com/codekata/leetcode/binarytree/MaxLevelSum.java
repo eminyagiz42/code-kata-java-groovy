@@ -4,8 +4,16 @@ import com.codekata.leetcode.binarytree.model.TreeNode;
 
 import java.util.*;
 
+/**
+ * The type Max level sum.
+ */
 public class MaxLevelSum {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree
@@ -13,6 +21,12 @@ public class MaxLevelSum {
         System.out.println(maxLevelSum(createTreeNode()));
     }
 
+    /**
+     * Max level sum int.
+     *
+     * @param root the root
+     * @return the int
+     */
     public static int maxLevelSum(TreeNode root) {
         int ans = 1;
         int maxLevelSum = Integer.MIN_VALUE;

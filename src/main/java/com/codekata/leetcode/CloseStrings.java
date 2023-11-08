@@ -4,8 +4,16 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * The type Close strings.
+ */
 public class CloseStrings {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //https://leetcode.com/problems/determine-if-two-strings-are-close/
         String word1 = "abc", word2 = "bca";
@@ -42,7 +50,14 @@ public class CloseStrings {
         return true;
     }
 
-    //TODO 149 / 153 testcases passed, fix the bug later
+    /**
+     * Close strings with bug boolean.
+     *
+     * @param word1 the word 1
+     * @param word2 the word 2
+     * @return the boolean
+     */
+//TODO 149 / 153 testcases passed, fix the bug later
     public static boolean closeStringsWithBug(String word1, String word2) {
         final Map<Character, Integer> charMap1 = countElements(word1.toCharArray());
         final Map<Character, Integer> charMap2 = countElements(word2.toCharArray());
@@ -60,6 +75,13 @@ public class CloseStrings {
         return countV == countK && charMap1.size() == countV;
     }
 
+    /**
+     * Close strings ideas boolean.
+     *
+     * @param word1 the word 1
+     * @param word2 the word 2
+     * @return the boolean
+     */
     public static boolean closeStringsIdeas(String word1, String word2) {
         final Map<Character, Integer> charMap1 = countElements(word1.toCharArray());
         final Map<Character, Integer> charMap2 = countElements(word2.toCharArray());
@@ -106,6 +128,12 @@ public class CloseStrings {
     }
 
 
+    /**
+     * Count elements map.
+     *
+     * @param array the array
+     * @return the map
+     */
     public static Map<Character, Integer> countElements(char[] array) {
         if (array == null || array.length == 0) {
             return null;

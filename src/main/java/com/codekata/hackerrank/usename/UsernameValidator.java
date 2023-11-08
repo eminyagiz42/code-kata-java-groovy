@@ -1,8 +1,14 @@
 package com.codekata.hackerrank.usename;
 
 
+/**
+ * The type Username validator.
+ */
 class UsernameValidator {
-	public static final String REGULAR_EXPRESSION = "^[[A-Z][a-z]][[A-Za-z0-9_]]{7,29}$";
+    /**
+     * The constant REGULAR_EXPRESSION.
+     */
+    public static final String REGULAR_EXPRESSION = "^[[A-Z][a-z]][[A-Za-z0-9_]]{7,29}$";
 }
 
 /*

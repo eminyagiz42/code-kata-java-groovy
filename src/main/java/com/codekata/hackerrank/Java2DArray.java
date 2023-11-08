@@ -5,12 +5,20 @@ import java.util.Collections;
 import java.util.Scanner;
 
 
+/**
+ * The type Java 2 d array.
+ */
 public class Java2DArray {
 
 //Problem: https://www.hackerrank.com/challenges/java-2d-array/problem
 
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int[][] arr = new int[6][6];
 

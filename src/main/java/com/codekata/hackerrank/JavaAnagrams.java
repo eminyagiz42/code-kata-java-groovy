@@ -2,11 +2,19 @@ package com.codekata.hackerrank;
 
 import java.util.Scanner;
 
+/**
+ * The type Java anagrams.
+ */
 public class JavaAnagrams{
 
 //Problem: https://www.hackerrank.com/challenges/java-anagrams/problem
 
-  public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
     
         Scanner scan = new Scanner(System.in);
         String a = scan.next();
@@ -16,7 +24,14 @@ public class JavaAnagrams{
         System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
     }
 
-  static boolean isAnagram(String a, String b) {
+    /**
+     * Is anagram boolean.
+     *
+     * @param a the a
+     * @param b the b
+     * @return the boolean
+     */
+    static boolean isAnagram(String a, String b) {
 
         boolean bool = true;
 

@@ -5,10 +5,18 @@ import com.codekata.leetcode.binarytree.model.TreeNode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Path nodes sum.
+ */
 public class PathNodesSum {
 
     private static int sum;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/path-sum-iii
@@ -16,6 +24,13 @@ public class PathNodesSum {
         System.out.println(pathSum(createTreeNode(), 8)); // output : 3
     }
 
+    /**
+     * Path sum int.
+     *
+     * @param root      the root
+     * @param targetSum the target sum
+     * @return the int
+     */
     public static int pathSum(TreeNode root, int targetSum) {
         if (root == null)
             return 0;
@@ -27,6 +42,14 @@ public class PathNodesSum {
         return sum;
     }
 
+    /**
+     * Dfs.
+     *
+     * @param root    the root
+     * @param target  the target
+     * @param map     the map
+     * @param current the current
+     */
     public static void dfs(TreeNode root, int target, Map<Long, Integer> map, long current) {
 
         if (root == null)

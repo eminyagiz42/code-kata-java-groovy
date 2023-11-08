@@ -3,8 +3,16 @@ package com.codekata.practice.overloading;
 import java.lang.reflect.Method;
 
 
+/**
+ * The type Method overloading.
+ */
 public class MethodOverloading {
 
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
     public static void main( String args[] ) {
         PrinterModel myPrinter = new PrinterModel();
         Integer[] intArray = { 1, 2, 3 };

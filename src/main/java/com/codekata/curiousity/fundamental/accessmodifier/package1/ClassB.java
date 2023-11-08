@@ -5,13 +5,28 @@ import com.codekata.curiousity.fundamental.accessmodifier.package2.ClassAChild;
 import com.codekata.curiousity.fundamental.accessmodifier.package2.ClassBChild;
 import com.codekata.curiousity.fundamental.accessmodifier.package2.ParentClass;
 
+/**
+ * The type Class b.
+ */
 public class ClassB {
 
+    /**
+     * The Package 1 class b default.
+     */
     int package1_ClassB_default = 0;
+    /**
+     * The Package 1 class b public.
+     */
     public int package1_ClassB_public = 1;
     private int package1_ClassB_private = 2;
+    /**
+     * The Package 1 class b protected.
+     */
     protected int package1_ClassB_protected = 3;
 
+    /**
+     * Learn access modifiers.
+     */
     public void learnAccessModifiers() {
 
         withinClass(); // All of them accessible

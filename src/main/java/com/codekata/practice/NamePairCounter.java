@@ -3,8 +3,16 @@ package com.codekata.practice;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Name pair counter.
+ */
 public class NamePairCounter {
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		String[] input = {
 				"john tom",
 				"john mary",

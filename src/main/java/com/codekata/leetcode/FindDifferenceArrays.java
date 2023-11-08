@@ -3,8 +3,16 @@ package com.codekata.leetcode;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * The type Find difference arrays.
+ */
 public class FindDifferenceArrays {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //https://leetcode.com/problems/find-the-difference-of-two-arrays
 
@@ -20,6 +28,13 @@ public class FindDifferenceArrays {
         }
     }
 
+    /**
+     * Find difference list.
+     *
+     * @param nums1 the nums 1
+     * @param nums2 the nums 2
+     * @return the list
+     */
     public static List<List<Integer>> findDifference(int[] nums1, int[] nums2) { //152 ms
         List<List<Integer>> listList = new ArrayList<>();
 
@@ -44,6 +59,13 @@ public class FindDifferenceArrays {
         return listList;
     }
 
+    /**
+     * Find difference stream list.
+     *
+     * @param nums1 the nums 1
+     * @param nums2 the nums 2
+     * @return the list
+     */
     public static List<List<Integer>> findDifferenceStream(int[] nums1, int[] nums2) { //13 ms
 
         Set<Integer> set1 = Arrays.stream(nums1).boxed().collect(Collectors.toSet());

@@ -3,9 +3,17 @@ package com.codekata.javastream;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Tag content practice.
+ */
 public class TagContentPractice {
 
-	public static void main(String[] args){
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
+    public static void main(String[] args){
 
 		String a = "<h1>Nayeem loves counseling</h1>";
 		String b= "<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>";
@@ -30,8 +38,13 @@ public class TagContentPractice {
 			printWithoutTag(x);
 		}
 	}
-	
-	public static void printWithoutTag(String textWithTag ) {
+
+    /**
+     * Print without tag.
+     *
+     * @param textWithTag the text with tag
+     */
+    public static void printWithoutTag(String textWithTag ) {
 		
 		String text = textWithTag.replaceAll("<","").replaceAll(">","").replaceAll("/","");
 		if(text.isEmpty()) {

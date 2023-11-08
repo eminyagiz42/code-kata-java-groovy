@@ -1,8 +1,16 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Max vowels.
+ */
 class MaxVowels {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		// https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length
 
@@ -11,7 +19,15 @@ class MaxVowels {
 		System.out.println(maxVowels(s, k));
 
 	}
-	public static int maxVowels(String s, int k) { //1ms
+
+    /**
+     * Max vowels int.
+     *
+     * @param s the s
+     * @param k the k
+     * @return the int
+     */
+    public static int maxVowels(String s, int k) { //1ms
 		int t = 0, n = s.length();
 		for (int i = 0; i < k; ++i) {
 			if (isVowel(s.charAt(i))) {

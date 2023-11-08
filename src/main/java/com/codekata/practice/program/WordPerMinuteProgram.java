@@ -5,10 +5,22 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The type Word per minute program.
+ */
 public class WordPerMinuteProgram {
 
+    /**
+     * The Keywords.
+     */
     public static String[] keywords = {"Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit", "sed", "do"};
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws InterruptedException the interrupted exception
+     */
     public static void main(String[] args) throws InterruptedException {
 
         System.out.println("3");

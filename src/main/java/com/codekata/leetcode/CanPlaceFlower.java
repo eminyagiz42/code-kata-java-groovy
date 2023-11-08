@@ -1,8 +1,16 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Can place flower.
+ */
 class CanPlaceFlower {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		// https://leetcode.com/problems/can-place-flowers/
 
@@ -14,7 +22,14 @@ class CanPlaceFlower {
 		System.out.println(canPlaceFlowers(flowerbed, 17));
 	}
 
-	public static boolean canPlaceFlowers(int[] flowerbed, int n) {
+    /**
+     * Can place flowers boolean.
+     *
+     * @param flowerbed the flowerbed
+     * @param n         the n
+     * @return the boolean
+     */
+    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
 		if (flowerbed.length == 1 && flowerbed[0] == 0) {
 			if (n == 1 || n == 0) {
 				return true;

@@ -5,11 +5,19 @@ import java.util.List;
 import java.util.Scanner;
 
 
+/**
+ * The type Insert delete element in list.
+ */
 public class InsertDeleteElementInList {
 	
 	//hacker rank problem : https://www.hackerrank.com/challenges/java-list/problem
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		List<Integer> numberList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         int arraySize = scan.nextInt();
@@ -26,7 +34,14 @@ public class InsertDeleteElementInList {
         }
      
     }
-    
+
+    /**
+     * Update records list.
+     *
+     * @param numberList the number list
+     * @param scan       the scan
+     * @return the list
+     */
     public static List<Integer> updateRecords(List<Integer> numberList, Scanner scan) {
         String process = scan.next();
         if("Insert".equals(process)){

@@ -1,7 +1,15 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Pivot index.
+ */
 public class PivotIndex {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/find-pivot-index/
@@ -10,6 +18,12 @@ public class PivotIndex {
         System.out.print(pivotIndex(nums));
     }
 
+    /**
+     * Pivot index int.
+     *
+     * @param nums the nums
+     * @return the int
+     */
     public static int pivotIndex(int[] nums) {
         ///int totalSum = IntStream.of(nums).sum(); //4ms
         int totalSum = 0;
@@ -30,6 +44,12 @@ public class PivotIndex {
         return -1;
     }
 
+    /**
+     * Pivot index slow int.
+     *
+     * @param nums the nums
+     * @return the int
+     */
     public static int pivotIndexSlow(int[] nums) { //378ms
         int sumLeft = 0;
         int sumRight = 0;

@@ -2,8 +2,16 @@ package com.codekata.leetcode.binarytree;
 
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Counting good nodes.
+ */
 public class CountingGoodNodes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/count-good-nodes-in-binary-tree/
@@ -11,6 +19,12 @@ public class CountingGoodNodes {
         System.out.println(goodNodes(createTreeNode1()));
     }
 
+    /**
+     * Good nodes int.
+     *
+     * @param root the root
+     * @return the int
+     */
     public static int goodNodes(TreeNode root) {
         if(root == null){
             return 0;

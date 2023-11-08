@@ -5,9 +5,17 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
+/**
+ * The type Big decimal practice.
+ */
 public class BigDecimalPractice {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		//Input
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();

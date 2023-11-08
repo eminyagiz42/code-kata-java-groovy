@@ -2,8 +2,16 @@ package com.codekata.leetcode;
 
 import java.util.Stack;
 
+/**
+ * The type Asteroid collision.
+ */
 public class AsteroidCollision {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //https://leetcode.com/problems/asteroid-collision
 
@@ -17,6 +25,12 @@ public class AsteroidCollision {
         }
     }
 
+    /**
+     * Asteroid collision int [ ].
+     *
+     * @param asteroids the asteroids
+     * @return the int [ ]
+     */
     public static int[] asteroidCollision(int[] asteroids) {//9ms Stack Solution
         Stack<Integer> stack = new Stack<>();
         for (final int a : asteroids)
@@ -35,6 +49,12 @@ public class AsteroidCollision {
         return stack.stream().mapToInt(Integer::intValue).toArray();
     }
 
+    /**
+     * Asteroid collision 2 int [ ].
+     *
+     * @param asteroids the asteroids
+     * @return the int [ ]
+     */
     public static int[] asteroidCollision2(int[] asteroids) { //Slow
         if (asteroids[0] < 0 ) {
             int[] reversed = new int[asteroids.length];

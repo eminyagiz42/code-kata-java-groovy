@@ -1,7 +1,15 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Highest altitude.
+ */
 public class HighestAltitude {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/find-the-highest-altitude/
@@ -10,6 +18,12 @@ public class HighestAltitude {
         System.out.print( largestAltitude(gain));
     }
 
+    /**
+     * Largest altitude int.
+     *
+     * @param gain the gain
+     * @return the int
+     */
     public static int largestAltitude(int[] gain) {
         int sum = 0;
         int largest = 0;

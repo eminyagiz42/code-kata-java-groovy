@@ -1,5 +1,8 @@
 package com.codekata.curiousity.fundamental.polymorphism.models;
 
+/**
+ * The type Car model.
+ */
 public class CarModel extends VehicleModel{
 
     @Override

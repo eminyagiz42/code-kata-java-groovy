@@ -4,8 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * The type Max operation.
+ */
 public class MaxOperation {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/max-number-of-k-sum-pairs
@@ -21,6 +29,13 @@ public class MaxOperation {
         System.out.print(maxOperations(nums, k));
     }
 
+    /**
+     * Max operations int.
+     *
+     * @param nums the nums
+     * @param k    the k
+     * @return the int
+     */
     public static int maxOperations(int[] nums, int k) {
         Arrays.sort(nums);
         int result = 0;
@@ -40,7 +55,14 @@ public class MaxOperation {
     }
 
 
-    // TODO 18 / 51 testcases passed
+    /**
+     * Max operations 2 int.
+     *
+     * @param nums the nums
+     * @param k    the k
+     * @return the int
+     */
+// TODO 18 / 51 testcases passed
     public static int maxOperations2(int[] nums, int k) { // current output: 57, expected output: 42
         List<Integer> collection = new ArrayList<>();
         int counter = 0;
@@ -63,6 +85,14 @@ public class MaxOperation {
         return counter;
     }
 
+    /**
+     * Remove element int [ ].
+     *
+     * @param nums        the nums
+     * @param firstIndex  the first index
+     * @param secondIndex the second index
+     * @return the int [ ]
+     */
     public static int[] removeElement(int[] nums, int firstIndex, int secondIndex) { // Use it by iterator.
         int[] newArr = new int[nums.length - 2];
         int newIndex = 0;

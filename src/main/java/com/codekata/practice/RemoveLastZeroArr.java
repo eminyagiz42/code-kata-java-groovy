@@ -1,7 +1,15 @@
 package com.codekata.practice;
 
+/**
+ * The type Remove last zero arr.
+ */
 public class RemoveLastZeroArr {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int [] arr = {1, 7, 8, 9, 10, 12, -1, 6, 5, 4, 3, 11, 0, 0};
 

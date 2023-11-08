@@ -2,8 +2,16 @@ package com.codekata.practice.program;
 
 import java.util.Scanner;
 
+/**
+ * The type Prime detector program.
+ */
 public class PrimeDetectorProgram {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +27,12 @@ public class PrimeDetectorProgram {
         scanner.close();
     }
 
+    /**
+     * Is prime boolean.
+     *
+     * @param number the number
+     * @return the boolean
+     */
     public static boolean isPrime(int number) {
         for (int i = number / 2; i > 1; i--) {
             if (number % i == 0) {

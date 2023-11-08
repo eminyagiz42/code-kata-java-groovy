@@ -1,7 +1,15 @@
 package com.codekata.leetcode.provinces;
 
+/**
+ * The type Number of provinces.
+ */
 class NumberOfProvinces {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/number-of-provinces
@@ -11,6 +19,12 @@ class NumberOfProvinces {
         System.out.println(findCircleNum(isConnected));
     }
 
+    /**
+     * Find circle num int.
+     *
+     * @param isConnected the is connected
+     * @return the int
+     */
     public static int findCircleNum(int[][] isConnected) {
         final int n = isConnected.length;
         UnionFind unionFind = new UnionFind(n);

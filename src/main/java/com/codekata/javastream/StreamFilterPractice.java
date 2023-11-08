@@ -4,9 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * The type Stream filter practice.
+ */
 public class StreamFilterPractice {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		
 		ArrayList<String> arrayList = new ArrayList<String>();
 		arrayList.add("1");

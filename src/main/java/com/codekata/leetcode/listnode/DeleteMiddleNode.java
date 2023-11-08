@@ -1,29 +1,46 @@
 package com.codekata.leetcode.listnode;
 
+/**
+ * The type Delete middle node.
+ */
 public class DeleteMiddleNode {
 
     /**
      * Definition for singly-linked list.
      * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode() {}
-     *     ListNode(int val) { this.val = val; }
-     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * int val;
+     * ListNode next;
+     * ListNode() {}
+     * ListNode(int val) { this.val = val; }
+     * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
+     *
+     * @param args the input arguments
      */
-
     public static void main(String[] args) {
         //https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list
 
         printList(deleteMiddle(createListNode())); // 1,3,4,7,1,2,6
     }
 
+    /**
+     * Delete middle list node.
+     *
+     * @param head the head
+     * @return the list node
+     */
     public static ListNode deleteMiddle(ListNode head) {
         int middle = getLength(head)  / 2 ;
         return deleteNode(head, middle);
     }
 
+    /**
+     * Delete node list node.
+     *
+     * @param head   the head
+     * @param middle the middle
+     * @return the list node
+     */
     public static ListNode deleteNode(ListNode head, int middle) {
         if (head == null)
             return null;
@@ -40,6 +57,12 @@ public class DeleteMiddleNode {
         return temp;
     }
 
+    /**
+     * Gets length.
+     *
+     * @param head the head
+     * @return the length
+     */
     public static int getLength(ListNode head) {
         int count = 0;
         while (head != null) {
@@ -49,6 +72,11 @@ public class DeleteMiddleNode {
         return count;
     }
 
+    /**
+     * Print list.
+     *
+     * @param head the head
+     */
     public static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val + "->");

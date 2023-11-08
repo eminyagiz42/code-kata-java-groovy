@@ -1,7 +1,15 @@
 package com.codekata.curiousity.fundamental.loop;
 
+/**
+ * The type Switch do notes.
+ */
 public class SwitchDoNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int day = 4;
         switch (day) {

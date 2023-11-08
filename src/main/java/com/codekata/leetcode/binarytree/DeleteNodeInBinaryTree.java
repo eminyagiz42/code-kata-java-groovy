@@ -2,8 +2,16 @@ package com.codekata.leetcode.binarytree;
 
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Delete node in binary tree.
+ */
 public class DeleteNodeInBinaryTree {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/delete-node-in-a-bst
@@ -11,6 +19,13 @@ public class DeleteNodeInBinaryTree {
         System.out.println(deleteNode(createTreeNode(), 9));
     }
 
+    /**
+     * Delete node tree node.
+     *
+     * @param root the root
+     * @param key  the key
+     * @return the tree node
+     */
     public static TreeNode deleteNode(TreeNode root, int key) {
         if (root == null) {
             return null;

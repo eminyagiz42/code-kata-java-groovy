@@ -5,9 +5,17 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The type Price range sort practice.
+ */
 public class PriceRangeSortPractice {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		
 		ArrayList<String> arrayList = new ArrayList<String>();
 		arrayList.add("100-200 TRY");

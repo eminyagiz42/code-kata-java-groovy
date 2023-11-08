@@ -2,8 +2,16 @@ package com.codekata.practice;
 
 import com.codekata.util.Constant;
 
+/**
+ * The type Reverse string.
+ */
 public class ReverseString {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         long start = System.currentTimeMillis();
@@ -13,6 +21,12 @@ public class ReverseString {
         System.out.println("timeElapsed = " + timeElapsed);
     }
 
+    /**
+     * Reverse string.
+     *
+     * @param s the s
+     * @return the string
+     */
     public static String reverse(String s) { // less than 1ms
         final char[] charArray = s.toCharArray();
         for (int i = 0; i < charArray.length / 2; i++) {
@@ -24,6 +38,12 @@ public class ReverseString {
         return  String.valueOf(charArray);
     }
 
+    /**
+     * Reverse 1 string.
+     *
+     * @param s the s
+     * @return the string
+     */
     public static String reverse1(String s) { // less than 1ms
         StringBuilder builder = new StringBuilder();
         for (int i = s.length() - 1; i >= 0; i--) {
@@ -32,6 +52,12 @@ public class ReverseString {
         return builder.toString();
     }
 
+    /**
+     * Reverse 2 string.
+     *
+     * @param s the s
+     * @return the string
+     */
     public static String reverse2(String s) { // 189ms
         char[] letters = new char[s.length()];
         int letterIndex = 0;

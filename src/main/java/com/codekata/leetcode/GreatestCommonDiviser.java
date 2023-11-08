@@ -1,8 +1,16 @@
 package com.codekata.leetcode;
 
 
+/**
+ * The type Greatest common diviser.
+ */
 class GreatestCommonDiviser {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/greatest-common-divisor-of-strings/
@@ -15,6 +23,13 @@ class GreatestCommonDiviser {
         //System.out.println(gcdOfStrings("ADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBB", "ADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBBADADCCBBCBDCDDBABCBB"));
     }
 
+    /**
+     * Gcd of strings string.
+     *
+     * @param str1 the str 1
+     * @param str2 the str 2
+     * @return the string
+     */
     public static String gcdOfStrings(String str1, String str2) {
         String shorterStr = "";
         String longerStr = "";
@@ -50,9 +65,14 @@ class GreatestCommonDiviser {
     }
 
 
-    /** find the common divisor recursively
+    /**
+     * find the common divisor recursively
      * if it returns empty,
      * try to substring one less letter of short string
+     *
+     * @param shorterStr the shorter str
+     * @param longerStr  the longer str
+     * @return the string
      */
     public static String findCommonDivisor(String shorterStr, String longerStr) {
         String commonDivisor = isCommonDivisor(shorterStr, longerStr);
@@ -87,6 +107,12 @@ class GreatestCommonDiviser {
         return "";
     }
 
+    /**
+     * Find common prefix string.
+     *
+     * @param input the input
+     * @return the string
+     */
     public static String findCommonPrefix(String input) {
         int len = input.length();
         for (int i = 1; i <= len / 2; i++) {

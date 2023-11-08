@@ -1,7 +1,15 @@
 package com.codekata.curiousity.fundamental.loop;
 
+/**
+ * The type Loop plus plus notes.
+ */
 public class LoopPlusPlusNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         for (int i = 0; i < 5; ++i) {

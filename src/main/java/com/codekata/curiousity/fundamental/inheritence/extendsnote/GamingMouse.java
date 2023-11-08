@@ -1,20 +1,28 @@
 package com.codekata.curiousity.fundamental.inheritence.extendsnote;
 
+/**
+ * The type Gaming mouse.
+ */
 public class GamingMouse extends MouseBase {
 
     private final int[] macros = {1,2,3};
     private int index = 0;
 
+    /**
+     * Switch macros.
+     */
     public void switchMacros() {
         final int selected = macros[index++ % 3];
         System.out.println("Macro " + selected + " is selected!");
     }
 
     /**
-     *  super means it comes from parent class
-     *  in inheritance,
-     *  Parent Class: MouseBase
-     *  Child Class: GamingMouse
+     * super means it comes from parent class
+     * in inheritance,
+     * Parent Class: MouseBase
+     * Child Class: GamingMouse
+     *
+     * @param mouseName the mouse name
      */
     public void extendedRightClick(String mouseName) {
         super.rightClick(mouseName);

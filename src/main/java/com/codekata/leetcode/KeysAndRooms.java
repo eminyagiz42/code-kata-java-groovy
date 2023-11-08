@@ -5,8 +5,16 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * The type Keys and rooms.
+ */
 class KeysAndRooms {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/keys-and-rooms/
@@ -24,6 +32,12 @@ class KeysAndRooms {
         System.out.println(canVisitAllRooms(rooms));
     }
 
+    /**
+     * Can visit all rooms boolean.
+     *
+     * @param rooms the rooms
+     * @return the boolean
+     */
     public static boolean canVisitAllRooms(List<List<Integer>> rooms) {
         int[] foundKeys = new int[rooms.size()];
         depthFirstSearch(rooms, 0, foundKeys);

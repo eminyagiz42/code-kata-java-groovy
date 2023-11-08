@@ -1,18 +1,22 @@
 package com.codekata.leetcode.listnode;
 
+/**
+ * The type Odd even list node.
+ */
 public class OddEvenListNode {
 
     /**
      * Definition for singly-linked list.
      * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode() {}
-     *     ListNode(int val) { this.val = val; }
-     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * int val;
+     * ListNode next;
+     * ListNode() {}
+     * ListNode(int val) { this.val = val; }
+     * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
+     *
+     * @param args the input arguments
      */
-
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/odd-even-linked-list/
@@ -20,6 +24,12 @@ public class OddEvenListNode {
         printList(oddEvenList(createListNode())); //2 4 2 4 2 4 2 output: 2 2 2 2 4 4 4
     }
 
+    /**
+     * Odd even list list node.
+     *
+     * @param head the head
+     * @return the list node
+     */
     public static ListNode oddEvenList(ListNode head) {
         if (head == null) {
             return null;
@@ -35,6 +45,12 @@ public class OddEvenListNode {
         return temp;
     }
 
+    /**
+     * Split odd even index int [ ].
+     *
+     * @param values the values
+     * @return the int [ ]
+     */
     public static int[] splitOddEvenIndex(int[] values) {
         final int length = values.length;
         int[] evenValues = new int[length / 2];
@@ -53,6 +69,13 @@ public class OddEvenListNode {
         return values;
     }
 
+    /**
+     * Get values int [ ].
+     *
+     * @param head   the head
+     * @param length the length
+     * @return the int [ ]
+     */
     public static int[] getValues(ListNode head, int length) {
         int[] values = new int[length];
         int index = 0;
@@ -63,6 +86,12 @@ public class OddEvenListNode {
         return values;
     }
 
+    /**
+     * Gets length.
+     *
+     * @param head the head
+     * @return the length
+     */
     public static int getLength(ListNode head) {
         int count = 0;
         while (head != null) {
@@ -72,6 +101,11 @@ public class OddEvenListNode {
         return count;
     }
 
+    /**
+     * Print list.
+     *
+     * @param head the head
+     */
     public static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val + "->");

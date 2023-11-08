@@ -1,8 +1,16 @@
 package com.codekata.practice;
 
+/**
+ * The type No negative double.
+ */
 public class NoNegativeDouble {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		
 		Double test1 = 0.0;
 		Double test2 = null;

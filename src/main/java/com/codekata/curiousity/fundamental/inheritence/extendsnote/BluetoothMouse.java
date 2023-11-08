@@ -1,7 +1,13 @@
 package com.codekata.curiousity.fundamental.inheritence.extendsnote;
 
+/**
+ * The type Bluetooth mouse.
+ */
 public class BluetoothMouse extends MouseBase{
 
+    /**
+     * Connect.
+     */
     public void connect() {
         System.out.println("Bluetooth is connected!");
     }
@@ -14,6 +20,11 @@ public class BluetoothMouse extends MouseBase{
      */
     private final int number = super.number + 10;
 
+    /**
+     * Gets number.
+     *
+     * @return the number
+     */
     public int getNumber() {
         return number;
     }

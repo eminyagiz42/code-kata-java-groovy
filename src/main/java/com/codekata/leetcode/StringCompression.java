@@ -1,8 +1,16 @@
 package com.codekata.leetcode;
 
+/**
+ * The type String compression.
+ */
 class StringCompression {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		// https://leetcode.com/problems/string-compression/
 
@@ -12,7 +20,13 @@ class StringCompression {
 		System.out.println(compress(res));
 	}
 
-	public static int compress(char[] chars) {
+    /**
+     * Compress int.
+     *
+     * @param chars the chars
+     * @return the int
+     */
+    public static int compress(char[] chars) {
 		int length = 0;
 		int index = 0;
 		int position = 0;

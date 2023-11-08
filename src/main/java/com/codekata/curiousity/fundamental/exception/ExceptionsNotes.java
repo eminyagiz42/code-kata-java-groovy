@@ -6,8 +6,16 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 
+/**
+ * The type Exceptions notes.
+ */
 public class ExceptionsNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         try{
             int i = 5 / 0;

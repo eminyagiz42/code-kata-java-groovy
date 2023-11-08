@@ -5,8 +5,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * The type Equal pairs.
+ */
 public class EqualPairs {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/equal-row-and-column-pairs
@@ -17,6 +25,12 @@ public class EqualPairs {
         System.out.println(equalPairs(grid));
     }
 
+    /**
+     * Equal pairs int.
+     *
+     * @param grid the grid
+     * @return the int
+     */
     public static int equalPairs(int[][] grid) {
         int counter = 0;
         final int[][] transposed = transpose(grid);
@@ -39,6 +53,12 @@ public class EqualPairs {
         return true;
     }
 
+    /**
+     * Transpose int [ ] [ ].
+     *
+     * @param matrix the matrix
+     * @return the int [ ] [ ]
+     */
     public static int[][] transpose(int[][] matrix){
         int m = matrix.length;
         int n = matrix[0].length;
@@ -55,6 +75,9 @@ public class EqualPairs {
     /**
      * In this approach, it solves that how many duplicated numbers exist in row,
      * and returns the majority of duplicated number
+     *
+     * @param grid the grid
+     * @return the int
      */
     public static int equalPairsOutOfScope(int[][] grid) {
         for (int[] ints : grid) {
@@ -65,6 +88,11 @@ public class EqualPairs {
 
     private static final List<Integer> countArr = new ArrayList<>();
 
+    /**
+     * Duplicates.
+     *
+     * @param codeList the code list
+     */
     public static void duplicates(final int[] codeList) {
         Set<Integer> lump = new HashSet<Integer>();
         for (int i : codeList) {
@@ -76,6 +104,12 @@ public class EqualPairs {
         }
     }
 
+    /**
+     * Find majority int.
+     *
+     * @param arr the arr
+     * @return the int
+     */
     public static int findMajority(List<Integer> arr) {
         int maxCount = 0;
         for (int i = 0; i < arr.size(); i++) {

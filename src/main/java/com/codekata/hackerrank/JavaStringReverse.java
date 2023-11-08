@@ -3,9 +3,17 @@ package com.codekata.hackerrank;
 
 import java.util.Scanner;
 
+/**
+ * The type Java string reverse.
+ */
 class JavaStringReverse{
     //Problem: https://www.hackerrank.com/challenges/java-string-reverse/problem
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         int palidrome = 0;
         Scanner sc = new Scanner(System.in);

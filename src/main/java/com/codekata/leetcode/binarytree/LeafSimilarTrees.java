@@ -5,8 +5,16 @@ import com.codekata.leetcode.binarytree.model.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The type Leaf similar trees.
+ */
 public class LeafSimilarTrees {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/leaf-similar-trees
@@ -14,6 +22,13 @@ public class LeafSimilarTrees {
         System.out.println(leafSimilar(createTreeNode1(), createTreeNode2()));
     }
 
+    /**
+     * Leaf similar boolean.
+     *
+     * @param root1 the root 1
+     * @param root2 the root 2
+     * @return the boolean
+     */
     public static boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> leaves1 = new ArrayList<>();
         List<Integer> leaves2 = new ArrayList<>();
@@ -22,6 +37,12 @@ public class LeafSimilarTrees {
         return leaves1.equals(leaves2);
     }
 
+    /**
+     * Depth first search.
+     *
+     * @param node   the node
+     * @param leaves the leaves
+     */
     public static void depthFirstSearch(TreeNode node, List<Integer> leaves) {
         if (node == null)
             return;

@@ -3,10 +3,18 @@ package com.codekata.hackerrank;
 import java.math.*;
 import java.util.*;
 
- class JavaBigIntegerPrimality {
+/**
+ * The type Java big integer primality.
+ */
+class JavaBigIntegerPrimality {
      //Problem: https://www.hackerrank.com/challenges/java-primality-test/problem
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         String a = scanner.nextLine();
         BigInteger n = new BigInteger(a);

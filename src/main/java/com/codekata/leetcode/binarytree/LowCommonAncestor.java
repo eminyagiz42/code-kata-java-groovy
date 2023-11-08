@@ -2,8 +2,16 @@ package com.codekata.leetcode.binarytree;
 
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Low common ancestor.
+ */
 public class LowCommonAncestor {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree
@@ -14,6 +22,14 @@ public class LowCommonAncestor {
         System.out.println(lowestCommonAncestor(createBinaryTree(), node5, node30).val);
     }
 
+    /**
+     * Lowest common ancestor tree node.
+     *
+     * @param root the root
+     * @param a    the a
+     * @param b    the b
+     * @return the tree node
+     */
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode a, TreeNode b) {
         if (root == null) {
             return null;
@@ -34,6 +50,11 @@ public class LowCommonAncestor {
         }
     }
 
+    /**
+     * Create binary tree tree node.
+     *
+     * @return the tree node
+     */
     public static TreeNode createBinaryTree() {
         TreeNode node70 = new TreeNode(70);
         TreeNode node5 = new TreeNode(5);

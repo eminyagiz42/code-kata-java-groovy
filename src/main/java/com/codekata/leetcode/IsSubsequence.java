@@ -2,8 +2,16 @@ package com.codekata.leetcode;
 
 import java.util.Stack;
 
+/**
+ * The type Is subsequence.
+ */
 public class IsSubsequence {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/is-subsequence
@@ -18,6 +26,13 @@ public class IsSubsequence {
         System.out.println(isSubsequence(s4, t4));
     }
 
+    /**
+     * Is subsequence boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public static boolean isSubsequence(String s, String t) {
         if (s.isEmpty()) {
             return true;
@@ -50,6 +65,13 @@ public class IsSubsequence {
          */
     }
 
+    /**
+     * Is subsequence 0 boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public static boolean isSubsequence0(String s, String t) {//0ms
         int subStrIndex = -1;
         for (int i = 0; i < s.length(); i++) {
@@ -64,6 +86,13 @@ public class IsSubsequence {
         return true;
     }
 
+    /**
+     * Is subsequence 1 boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public static boolean isSubsequence1(String s, String t) { //1ms
         int i = 0, j = 0;
         while (i < s.length() && j < t.length()) {
@@ -76,6 +105,13 @@ public class IsSubsequence {
     }
 
 
+    /**
+     * Is subsequence 2 boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public boolean isSubsequence2(String s, String t) { //2ms
         if (s.length() == 0) {
             return true;
@@ -95,6 +131,13 @@ public class IsSubsequence {
         return false;
     }
 
+    /**
+     * Is subsequence 3 boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public boolean isSubsequence3(String s, String t) { //3ms
         Integer leftBound = s.length();
         Integer rightBound = t.length();
@@ -109,6 +152,13 @@ public class IsSubsequence {
         return pLeft == leftBound;
     }
 
+    /**
+     * Is subsequence m boolean.
+     *
+     * @param s the s
+     * @param t the t
+     * @return the boolean
+     */
     public boolean isSubsequenceM(String s, String t) { // Best memory 38.5mb
         int i = 0, j = 0;
 

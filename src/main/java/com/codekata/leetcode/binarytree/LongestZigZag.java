@@ -3,8 +3,16 @@ package com.codekata.leetcode.binarytree;
 import com.codekata.leetcode.binarytree.model.ExtendedTreeNode;
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Longest zig zag.
+ */
 public class LongestZigZag {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
@@ -12,7 +20,13 @@ public class LongestZigZag {
         System.out.println(longestZigZag(createTreeNode1()));
     }
 
-   public static int longestZigZag(TreeNode root) {
+    /**
+     * Longest zig zag int.
+     *
+     * @param root the root
+     * @return the int
+     */
+    public static int longestZigZag(TreeNode root) {
         return depthFirstSearch(root).subtreeMax;
     }
 

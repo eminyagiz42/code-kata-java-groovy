@@ -1,18 +1,22 @@
 package com.codekata.leetcode.listnode;
 
+/**
+ * The type Reverse list node.
+ */
 public class ReverseListNode {
 
     /**
      * Definition for singly-linked list.
      * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode() {}
-     *     ListNode(int val) { this.val = val; }
-     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * int val;
+     * ListNode next;
+     * ListNode() {}
+     * ListNode(int val) { this.val = val; }
+     * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
+     *
+     * @param args the input arguments
      */
-
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/reverse-linked-list
@@ -20,6 +24,12 @@ public class ReverseListNode {
         printList(reverseList(createListNode0())); // 1,3,4,7,1,2,6
     }
 
+    /**
+     * Reverse list list node.
+     *
+     * @param head the head
+     * @return the list node
+     */
     public static ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
@@ -35,6 +45,12 @@ public class ReverseListNode {
         return temp;
     }
 
+    /**
+     * Reverse int [ ].
+     *
+     * @param validData the valid data
+     * @return the int [ ]
+     */
     public static int[] reverse(int[] validData) {
         for (int i = 0; i < validData.length / 2; i++) {
             int temp = validData[i];
@@ -44,6 +60,13 @@ public class ReverseListNode {
         return validData;
     }
 
+    /**
+     * Get values int [ ].
+     *
+     * @param head   the head
+     * @param length the length
+     * @return the int [ ]
+     */
     public static int[] getValues(ListNode head, int length) {
         int[] values = new int[length];
         int index = 0;
@@ -54,6 +77,12 @@ public class ReverseListNode {
         return values;
     }
 
+    /**
+     * Gets length.
+     *
+     * @param head the head
+     * @return the length
+     */
     public static int getLength(ListNode head) {
         int count = 0;
         while (head != null) {
@@ -63,6 +92,11 @@ public class ReverseListNode {
         return count;
     }
 
+    /**
+     * Print list.
+     *
+     * @param head the head
+     */
     public static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val + "->");

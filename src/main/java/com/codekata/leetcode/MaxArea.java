@@ -1,7 +1,15 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Max area.
+ */
 public class MaxArea {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/container-with-most-water
@@ -14,6 +22,9 @@ public class MaxArea {
 
     /**
      * Solution 3 : This solution is the quickest because it is O(n) complexity
+     *
+     * @param height the height
+     * @return the int
      */
     public static int maxArea(int[] height) {
         int leftIndex = 0;
@@ -40,6 +51,9 @@ public class MaxArea {
 
     /**
      * Solution 2 : This solution is recursive
+     *
+     * @param height the height
+     * @return the int
      */
     public static int maxAreaRecursive(int[] height) {
         int maxFirst = 0;
@@ -67,6 +81,9 @@ public class MaxArea {
 
     /**
      * Solution 1 : This solution is slower because it is O(n^2) complexity
+     *
+     * @param height the height
+     * @return the int
      */
     public static int maxAreaSlow(int[] height) {
         int maxFirst = 0;

@@ -1,7 +1,15 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Recent counter.
+ */
 public class RecentCounter {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/number-of-recent-calls
@@ -16,13 +24,32 @@ public class RecentCounter {
         }
     }
 
-    //Solution 1
+    /**
+     * The Ar.
+     */
+//Solution 1
     int[] ar;
-    int l=0,r=0;
+    /**
+     * The L.
+     */
+    int l=0, /**
+     * The R.
+     */
+    r=0;
+
+    /**
+     * Instantiates a new Recent counter.
+     */
     public RecentCounter() {
         ar=new int[10000];
     }
 
+    /**
+     * Ping int.
+     *
+     * @param t the t
+     * @return the int
+     */
     public int ping(int t) {
         ar[r++]=t;
         while(t-ar[l]>3000)

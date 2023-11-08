@@ -3,9 +3,17 @@ package com.codekata.javastream;
 import java.util.ArrayList;
 import java.util.List;
 
-class AllMatchPractice {
+/**
+ * The type All match practice.
+ */
+public class AllMatchPractice {
 
-	public static void main(String []argh) {
+    /**
+     * Main.
+     *
+     * @param argh the argh
+     */
+    public static void main(String []argh) {
 
 		List<String> listo = new ArrayList<String>();
 		listo.add("");

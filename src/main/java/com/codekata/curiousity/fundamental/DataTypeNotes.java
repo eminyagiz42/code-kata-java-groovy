@@ -1,6 +1,14 @@
 package com.codekata.curiousity.fundamental;
 
+/**
+ * The type Data type notes.
+ */
 public class DataTypeNotes {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //Primitive Types
         byte a = 127; // Byte.MAX_VALUE

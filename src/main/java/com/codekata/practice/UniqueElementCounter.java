@@ -2,9 +2,17 @@ package com.codekata.practice;
 
 import java.util.*;
 
+/**
+ * The type Unique element counter.
+ */
 public class UniqueElementCounter {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		String a1 = "john"; String b1 = "tom";
 		String a2 = "john"; String b2 = "mary";
 		String a3 = "john"; String b3 = "tom";
@@ -33,7 +41,13 @@ public class UniqueElementCounter {
 		}
 	}
 
-	public static int countUniqueElements(ArrayList array) {
+    /**
+     * Count unique elements int.
+     *
+     * @param array the array
+     * @return the int
+     */
+    public static int countUniqueElements(ArrayList array) {
 		if (array == null || array.size() == 0) {
 			return 0; // Return 0 for empty or null arrays
 		}
@@ -51,7 +65,13 @@ public class UniqueElementCounter {
 		return count;
 	}
 
-	public static Map<Integer, Integer> countUniqueAndNonUniqueElements(int[] array) {
+    /**
+     * Count unique and non unique elements map.
+     *
+     * @param array the array
+     * @return the map
+     */
+    public static Map<Integer, Integer> countUniqueAndNonUniqueElements(int[] array) {
 		if (array == null || array.length == 0) {
 			return null; // Return null for empty or null arrays
 		}

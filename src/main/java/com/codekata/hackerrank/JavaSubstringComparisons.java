@@ -3,11 +3,19 @@ package com.codekata.hackerrank;
 import java.util.Scanner;
 
 
+/**
+ * The type Java substring comparisons.
+ */
 public class JavaSubstringComparisons {
 
 	//Problem: https://www.hackerrank.com/challenges/java-string-compare/problem
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String s = scan.next();
 		int k = scan.nextInt();
@@ -15,7 +23,14 @@ public class JavaSubstringComparisons {
 		System.out.println(getSmallestAndLargest(s, k));
 	}
 
-	public static String getSmallestAndLargest(String str, int k) {
+    /**
+     * Gets smallest and largest.
+     *
+     * @param str the str
+     * @param k   the k
+     * @return the smallest and largest
+     */
+    public static String getSmallestAndLargest(String str, int k) {
 		String array[] = str.split("");
 		String newArray[] = new String[str.length()];
 		StringBuilder stringBuilder = new StringBuilder();
@@ -33,7 +48,13 @@ public class JavaSubstringComparisons {
 		return smallest + "\n" + largest;
 	}
 
-	public static void sortLex(String[] words, int num) {
+    /**
+     * Sort lex.
+     *
+     * @param words the words
+     * @param num   the num
+     */
+    public static void sortLex(String[] words, int num) {
 		for (int i = 0; i < words.length - num; ++i) {
 			for (int j = i + 1; j < words.length - num + 1; ++j) {
 				if (words[i].compareTo(words[j]) > 0) {

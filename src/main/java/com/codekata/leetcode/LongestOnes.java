@@ -1,6 +1,14 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Longest ones.
+ */
 public class LongestOnes {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/max-consecutive-ones-iii/
@@ -13,6 +21,13 @@ public class LongestOnes {
         System.out.println(longestOnes(nums, k));
     }
 
+    /**
+     * Longest ones int.
+     *
+     * @param nums the nums
+     * @param k    the k
+     * @return the int
+     */
     public static int longestOnes(int[] nums, int k) {
         int[] count1And0 = count1And0InArray(nums);
         int savedSum = 0;
@@ -89,6 +104,13 @@ public class LongestOnes {
         return dataCleaning(longestSubarray);
     }
 
+    /**
+     * Longest ones 2 int.
+     *
+     * @param nums the nums
+     * @param k    the k
+     * @return the int
+     */
     public static int longestOnes2(int[] nums, int k) {
         int left = 0;
         int right;

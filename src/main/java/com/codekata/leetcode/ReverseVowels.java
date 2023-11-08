@@ -2,11 +2,22 @@ package com.codekata.leetcode;
 
 import java.util.*;
 
+/**
+ * The type Reverse vowels.
+ */
 class ReverseVowels {
 
-	public static List<String> vowels = Arrays.asList("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
+    /**
+     * The Vowels.
+     */
+    public static List<String> vowels = Arrays.asList("a", "e", "i", "o", "u", "A", "E", "I", "O", "U");
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		// https://leetcode.com/problems/reverse-vowels-of-a-string
 
@@ -16,7 +27,13 @@ class ReverseVowels {
 		System.out.println(reverseVowels("com/eminyagiz/leetcode"));
 	}
 
-	public static String reverseVowels(String s) {
+    /**
+     * Reverse vowels string.
+     *
+     * @param s the s
+     * @return the string
+     */
+    public static String reverseVowels(String s) {
 
 		List<Integer> keyList = new ArrayList<>();
 		List<String> valueList = new ArrayList<>();
@@ -38,7 +55,13 @@ class ReverseVowels {
 		return String.join("", splitedStr);
 	}
 
-	public static List<Integer> reverseArrayList(List<Integer> alist) {
+    /**
+     * Reverse array list list.
+     *
+     * @param alist the alist
+     * @return the list
+     */
+    public static List<Integer> reverseArrayList(List<Integer> alist) {
 		List<Integer> revArrayList = new ArrayList<>();
 		for (int i = alist.size() - 1; i >= 0; i--) {
 			revArrayList.add(alist.get(i));

@@ -4,8 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * The type Remove retain notes.
+ */
 public class RemoveRetainNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         List<String> stringList1 = new ArrayList<>(Arrays.asList("a", "b", "c"));

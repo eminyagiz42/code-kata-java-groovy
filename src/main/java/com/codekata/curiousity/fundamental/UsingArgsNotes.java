@@ -1,7 +1,15 @@
 package com.codekata.curiousity.fundamental;
 
+/**
+ * The type Using args notes.
+ */
 public class UsingArgsNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         for (String s :args) {

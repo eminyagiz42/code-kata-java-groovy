@@ -1,8 +1,16 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Increasing triplet.
+ */
 class IncreasingTriplet {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		// https://leetcode.com/problems/increasing-triplet-subsequence
 
@@ -16,7 +24,13 @@ class IncreasingTriplet {
 		System.out.println(increasingTriplet(productQuantity));
 	}
 
-	public static boolean increasingTriplet(int[] nums) {
+    /**
+     * Increasing triplet boolean.
+     *
+     * @param nums the nums
+     * @return the boolean
+     */
+    public static boolean increasingTriplet(int[] nums) {
 		int firstMin = Integer.MAX_VALUE;
 		int secondMin = Integer.MAX_VALUE;
 
@@ -33,7 +47,13 @@ class IncreasingTriplet {
 	}
 
 
-	public static boolean increasingTripletSlow(int[] nums) { // 2nd Solution - Slower approach
+    /**
+     * Increasing triplet slow boolean.
+     *
+     * @param nums the nums
+     * @return the boolean
+     */
+    public static boolean increasingTripletSlow(int[] nums) { // 2nd Solution - Slower approach
 		for (int i = 0; i < nums.length; i++) {
 			int currentNumber = nums[i];
 			for (int j = i+1; j < nums.length; j++) {

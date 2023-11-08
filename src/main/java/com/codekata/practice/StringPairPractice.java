@@ -2,9 +2,17 @@ package com.codekata.practice;
 
 import java.util.ArrayList;
 
+/**
+ * The type String pair practice.
+ */
 public class StringPairPractice {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 
 		String a1 = "john"; String b1 = "tom";
 		String a2 = "john"; String b2 = "mary";

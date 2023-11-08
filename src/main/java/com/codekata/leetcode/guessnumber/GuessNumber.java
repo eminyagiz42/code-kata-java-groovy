@@ -1,7 +1,15 @@
 package com.codekata.leetcode.guessnumber;
 
+/**
+ * The type Guess number.
+ */
 public class GuessNumber extends GuessGame {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/guess-number-higher-or-lower
@@ -12,11 +20,8 @@ public class GuessNumber extends GuessGame {
     /**
      * Forward declaration of guess API.
      *
-     * @param n
-     *               guess num
-     * @return -1 if guess num >  n
-     * 0 if guess num == n
-     * 1 if guess num <  n
+     * @param n guess num
+     * @return foundNumber
      */
     public static int guessNumber(int n) {
         int l = 1;

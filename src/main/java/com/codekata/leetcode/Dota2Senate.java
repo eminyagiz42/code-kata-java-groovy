@@ -3,8 +3,16 @@ package com.codekata.leetcode;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * The type Dota 2 senate.
+ */
 public class Dota2Senate {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         //https://leetcode.com/problems/dota2-senate/
         String senate = "RDD"; // Dire
@@ -12,6 +20,12 @@ public class Dota2Senate {
         System.out.println(predictPartyVictory(senate));
     }
 
+    /**
+     * Predict party victory string.
+     *
+     * @param senate the senate
+     * @return the string
+     */
     public static String predictPartyVictory(String senate) {
         Queue<Character> queue = new LinkedList<Character>();
         int radiantCount = 0, direCount = 0;

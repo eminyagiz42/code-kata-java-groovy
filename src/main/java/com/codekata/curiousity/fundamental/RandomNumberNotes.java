@@ -2,8 +2,16 @@ package com.codekata.curiousity.fundamental;
 
 import java.util.Random;
 
+/**
+ * The type Random number notes.
+ */
 public class RandomNumberNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         
         Random random = new Random();

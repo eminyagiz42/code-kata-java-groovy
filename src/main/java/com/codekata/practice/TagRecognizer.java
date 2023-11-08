@@ -6,9 +6,17 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * The type Tag recognizer.
+ */
 public class TagRecognizer {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 	    final String str = "<tag>apple</tag><b>hello</b><tag>orange <tag>pear</tag></tag>";
 	    String a2 = "<h1>had<h1>public</h1></h1>";
 	    

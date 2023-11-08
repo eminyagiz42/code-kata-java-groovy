@@ -2,8 +2,16 @@ package com.codekata.practice;
 
 import com.codekata.util.Constant;
 
+/**
+ * The type Find duplicates.
+ */
 public class FindDuplicates {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         String sentence1 = "How many duplicates are there ?";
@@ -15,6 +23,12 @@ public class FindDuplicates {
         System.out.println("timeElapsed = " + timeElapsed);
     }
 
+    /**
+     * Find duplicates string.
+     *
+     * @param str the str
+     * @return the string
+     */
     public static String findDuplicates(String str) { //78ms
         StringBuilder duplicates = new StringBuilder();
         StringBuilder characters = new StringBuilder();
@@ -29,6 +43,12 @@ public class FindDuplicates {
         return duplicates.toString();
     }
 
+    /**
+     * Find duplicates 2 string.
+     *
+     * @param str the str
+     * @return the string
+     */
     public static String findDuplicates2(String str) { //209ms
         String duplicates = "";
         String characters = "";
@@ -44,6 +64,12 @@ public class FindDuplicates {
         return duplicates;
     }
 
+    /**
+     * Find duplicates slow string.
+     *
+     * @param str the str
+     * @return the string
+     */
     public static String findDuplicatesSlow(String str) { //2208ms
         StringBuilder stringBuilder = new StringBuilder();
         final char[] charArray = str.toCharArray();

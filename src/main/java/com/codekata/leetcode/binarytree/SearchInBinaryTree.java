@@ -2,8 +2,16 @@ package com.codekata.leetcode.binarytree;
 
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Search in binary tree.
+ */
 public class SearchInBinaryTree {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/search-in-a-binary-search-tree
@@ -11,6 +19,13 @@ public class SearchInBinaryTree {
         System.out.println(searchBST(createTreeNode(), 9));
     }
 
+    /**
+     * Search bst tree node.
+     *
+     * @param root the root
+     * @param val  the val
+     * @return the tree node
+     */
     public static TreeNode searchBST(TreeNode root, int val) {
         if (root == null) {
             return null;

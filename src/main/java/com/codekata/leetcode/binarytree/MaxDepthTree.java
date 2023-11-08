@@ -2,8 +2,16 @@ package com.codekata.leetcode.binarytree;
 
 import com.codekata.leetcode.binarytree.model.TreeNode;
 
+/**
+ * The type Max depth tree.
+ */
 public class MaxDepthTree {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/maximum-depth-of-binary-tree
@@ -11,10 +19,23 @@ public class MaxDepthTree {
         System.out.println(maxDepth(createTreeNode()));
     }
 
+    /**
+     * Max depth int.
+     *
+     * @param root the root
+     * @return the int
+     */
     public static int maxDepth(TreeNode root) {
         return calculateDepth(root, 1);
     }
 
+    /**
+     * Calculate depth int.
+     *
+     * @param root the root
+     * @param i    the
+     * @return the int
+     */
     public static int calculateDepth(TreeNode root, int i) {
         if (root == null) {
             return 0;

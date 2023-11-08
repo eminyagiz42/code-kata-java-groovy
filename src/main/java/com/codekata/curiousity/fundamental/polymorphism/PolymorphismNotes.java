@@ -4,8 +4,16 @@ import com.codekata.curiousity.fundamental.polymorphism.models.VehicleModel;
 import com.codekata.curiousity.fundamental.polymorphism.models.CarModel;
 import com.codekata.curiousity.fundamental.polymorphism.models.MotorbikeModel;
 
+/**
+ * The type Polymorphism notes.
+ */
 public class PolymorphismNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         VehicleModel vehicleModel = new VehicleModel();
         vehicleModel.startEngine("vehicle"); // Before OVERRIDE the method in the parent class

@@ -6,8 +6,16 @@ import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * The type Decode string.
+ */
 public class DecodeString {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/decode-string
@@ -22,6 +30,12 @@ public class DecodeString {
         System.out.println(decodeString(str));
     }
 
+    /**
+     * Decode string string.
+     *
+     * @param s the s
+     * @return the string
+     */
     public static String decodeString(String s) { // 5ms
         String res = "";
         Stack<Integer> nums = new Stack<Integer>();
@@ -50,7 +64,13 @@ public class DecodeString {
     private static final Pattern ONLY_DECIMAL = Pattern.compile("\\d+");
     //private static final String SPLIT_BRACKET_KEEP_DELIMITER = "((?<=]))";
 
-    //TODO Handle the extreme case: "3[z]2[2[y]pq4[2[jk]e1[f]]]ef"
+    /**
+     * Decode string 1 string.
+     *
+     * @param s the s
+     * @return the string
+     */
+//TODO Handle the extreme case: "3[z]2[2[y]pq4[2[jk]e1[f]]]ef"
     // expected output zzzyypqjkjkefjkjkefjkjkefjkjkefyypqjkjkefjkjkefjkjkefjkjkefef
     public static String decodeString1(String s) {
         String SPLIT_BRACKET_KEEP_DELIMITER = "((?<=]))";
@@ -136,6 +156,9 @@ public class DecodeString {
     /**
      * This approach didn't satisfied me,
      * So, I started from the scratch.
+     *
+     * @param s the s
+     * @return the string
      */
     public static String decodeString2(String s) {
         List<String> analyzedList = getAnalyzedList(s);

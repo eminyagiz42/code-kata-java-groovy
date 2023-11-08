@@ -2,8 +2,16 @@ package com.codekata.leetcode;
 
 import java.util.*;
 
+/**
+ * The type Unique occurrences.
+ */
 public class UniqueOccurrences {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/unique-number-of-occurrences/
@@ -13,6 +21,12 @@ public class UniqueOccurrences {
         System.out.println(uniqueOccurrences(arr));
     }
 
+    /**
+     * Unique occurrences boolean.
+     *
+     * @param arr the arr
+     * @return the boolean
+     */
     public static boolean uniqueOccurrences(int[] arr) {
         Set<Integer> set1 = convertToSet(arr);
         int[] occurrences = getOccurrences(arr, set1);
@@ -48,10 +62,12 @@ public class UniqueOccurrences {
 
 
     /**
-     *  Out of scope: This solution is checking that,
-     *  if only one element in arr is unique, and other is duplicated returns true
-      */
-
+     * Out of scope: This solution is checking that,
+     * if only one element in arr is unique, and other is duplicated returns true
+     *
+     * @param arr the arr
+     * @return the boolean
+     */
     public static boolean uniqueOccurrencesOutOfScope(int[] arr) {
         Set<Integer> set1 = convertToSet(arr);
         final Iterator<Integer> iterator = set1.iterator();

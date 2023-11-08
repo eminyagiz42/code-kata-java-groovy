@@ -2,9 +2,17 @@ package com.codekata.practice;
 
 import java.util.ArrayList;
 
+/**
+ * The type Merge alternately.
+ */
 public class MergeAlternately {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		
 		String word1 = "  a   b   c";
 		String word2 = "    p   q   r";
@@ -12,8 +20,15 @@ public class MergeAlternately {
 		System.out.print(mergeAlternately(word1, word2));
 
 	}
-	
-	   public static String mergeAlternately(String word1, String word2) {
+
+    /**
+     * Merge alternately string.
+     *
+     * @param word1 the word 1
+     * @param word2 the word 2
+     * @return the string
+     */
+    public static String mergeAlternately(String word1, String word2) {
 
 	        char[] inputChars1 =  word1.toCharArray();
 	        char[] inputChars2 =  word2.toCharArray();

@@ -1,7 +1,13 @@
 package com.codekata.util;
 
+/**
+ * The type Constant.
+ */
 public class Constant {
 
+    /**
+     * The constant VERY_LONG_SENTENCE.
+     */
     public static final String VERY_LONG_SENTENCE = "t*av**trbi***p**lx*romh*lb*p*d**r*ngiap**h*****lvol*ws***b**b**kf***bu**wa*v***m**cs**k*rv*fql*" +
             "qgz*l*cbm***tzyy**h*m*y******tp****dkc**qn*n*plxw***bsz*g*xo*w**o***drzyed*k*ghkhtdjcv**cq**z**per" +
             "eh*nbc*a*****w*bz***f*g****h**yj****v*k*u*bqfo*wl****i**tygp*kd*****n****bh**vg**lkhqd**o*jb**l*lc" +

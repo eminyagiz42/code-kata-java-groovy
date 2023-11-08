@@ -1,7 +1,15 @@
 package com.codekata.leetcode;
 
+/**
+ * The type Move zeros.
+ */
 public class MoveZeros {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/move-zeroes
@@ -24,6 +32,11 @@ public class MoveZeros {
         }
     }
 
+    /**
+     * Move zeroes.
+     *
+     * @param nums the nums
+     */
     public static void moveZeroes(int[] nums) {
         int countZeros = 0;
         int index = 0;

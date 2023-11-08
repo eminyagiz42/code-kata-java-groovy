@@ -4,8 +4,16 @@ import com.codekata.leetcode.binarytree.model.TreeNode;
 
 import java.util.*;
 
+/**
+ * The type Binary tree right.
+ */
 public class BinaryTreeRight {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //https://leetcode.com/problems/binary-tree-right-side-view
@@ -13,6 +21,12 @@ public class BinaryTreeRight {
         System.out.println(rightSideView(createTreeNode()));
     }
 
+    /**
+     * Right side view list.
+     *
+     * @param root the root
+     * @return the list
+     */
     public static List<Integer> rightSideView(TreeNode root) {
         if (root == null) {
             return new ArrayList<>();

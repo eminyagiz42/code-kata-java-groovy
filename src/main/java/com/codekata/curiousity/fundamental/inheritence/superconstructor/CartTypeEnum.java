@@ -1,5 +1,15 @@
 package com.codekata.curiousity.fundamental.inheritence.superconstructor;
 
+/**
+ * The enum Cart type enum.
+ */
 public enum CartTypeEnum {
-    ROOT_CART, SUB_CART
+    /**
+     * Root cart cart type enum.
+     */
+    ROOT_CART,
+    /**
+     * Sub cart cart type enum.
+     */
+    SUB_CART
 }

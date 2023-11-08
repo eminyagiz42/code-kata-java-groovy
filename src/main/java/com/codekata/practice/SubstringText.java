@@ -2,9 +2,17 @@ package com.codekata.practice;
 
 import java.net.URI;
 
+/**
+ * The type Substring text.
+ */
 public class SubstringText {
 
-	public static void main(String[] args) {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
+    public static void main(String[] args) {
 		
 		String txt = "https://d.e.v/rest/catalog/attributes?page[limit]=10000&page[offset]=3333";
 		String txt2 = "https://d.e.v/rest/catalog/attributes?page[offset]=3333&page[limit]=10000";

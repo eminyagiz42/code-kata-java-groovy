@@ -4,8 +4,14 @@ import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+/**
+ * The type Old swing program.
+ */
 public class OldSwingProgram {
 
+    /**
+     * Instantiates a new Old swing program.
+     */
     public OldSwingProgram() {
         JFrame jFrame = new JFrame();
         jFrame.setVisible(true);
@@ -68,6 +74,11 @@ public class OldSwingProgram {
         jFrame.add(jPanel);
     }
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         new OldSwingProgram();
     }

@@ -2,6 +2,9 @@ package com.codekata.hackerrank;
 
 import java.util.*;
 
+/**
+ * The type Java subarray.
+ */
 class JavaSubarray {
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -9,6 +12,11 @@ class JavaSubarray {
 
     //Problem : https://www.hackerrank.com/challenges/java-negative-subarray/problem
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         try{
             int numberOfInputs =  scanner.nextInt();
@@ -35,6 +43,13 @@ class JavaSubarray {
         }
     }
 
+    /**
+     * Print sub arrays.
+     *
+     * @param arr   the arr
+     * @param start the start
+     * @param end   the end
+     */
     static void printSubArrays(int[] arr, int start, int end) {
         int total = 0;
         if (end == arr.length)

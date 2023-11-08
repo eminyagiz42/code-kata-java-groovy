@@ -1,7 +1,15 @@
 package com.codekata.curiousity.fundamental;
 
+/**
+ * The type Escape character notes.
+ */
 public class EscapeCharacterNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         // \" question mark

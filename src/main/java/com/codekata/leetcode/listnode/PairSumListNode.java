@@ -1,18 +1,22 @@
 package com.codekata.leetcode.listnode;
 
+/**
+ * The type Pair sum list node.
+ */
 public class PairSumListNode {
 
     /**
      * Definition for singly-linked list.
      * public class ListNode {
-     *     int val;
-     *     ListNode next;
-     *     ListNode() {}
-     *     ListNode(int val) { this.val = val; }
-     *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+     * int val;
+     * ListNode next;
+     * ListNode() {}
+     * ListNode(int val) { this.val = val; }
+     * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      * }
+     *
+     * @param args the input arguments
      */
-
     public static void main(String[] args) {
 
         // https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list
@@ -20,6 +24,12 @@ public class PairSumListNode {
         System.out.println(pairSum(createListNode())); // 5,4,2,1
     }
 
+    /**
+     * Pair sum int.
+     *
+     * @param head the head
+     * @return the int
+     */
     public static int pairSum(ListNode head) { //7ms
         if (head == null) {
             return 0;
@@ -36,6 +46,13 @@ public class PairSumListNode {
        return saved;
     }
 
+    /**
+     * Get values int [ ].
+     *
+     * @param head   the head
+     * @param length the length
+     * @return the int [ ]
+     */
     public static int[] getValues(ListNode head, int length) {
         int[] values = new int[length];
         int index = 0;
@@ -46,6 +63,12 @@ public class PairSumListNode {
         return values;
     }
 
+    /**
+     * Gets length.
+     *
+     * @param head the head
+     * @return the length
+     */
     public static int getLength(ListNode head) {
         int count = 0;
         while (head != null) {

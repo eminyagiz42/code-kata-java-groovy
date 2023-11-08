@@ -2,8 +2,16 @@ package com.codekata.curiousity.fundamental.collection;
 
 import java.util.*;
 
+/**
+ * The type Collection notes.
+ */
 public class CollectionNotes {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         // arrayPractice();
         // arrayListPractice();
@@ -17,6 +25,9 @@ public class CollectionNotes {
         queuePractice();
     }
 
+    /**
+     * Array practice.
+     */
     public static void arrayPractice() {
         int[] integerArray = new int[5];
         integerArray[0] = 10;
@@ -48,6 +59,9 @@ public class CollectionNotes {
         System.out.println(arr[0] == cloneArray[0]); // true
     }
 
+    /**
+     * Array list practice.
+     */
     public static void arrayListPractice() {
 
         // Raw
@@ -84,21 +98,33 @@ public class CollectionNotes {
         });
     }
 
+    /**
+     * List practice.
+     */
     public static void ListPractice() {
         List<Integer> integerList = new ArrayList<>();
 
     }
 
+    /**
+     * Sets practice.
+     */
     public static void setPractice() {
         Set exampleleSet = new HashSet();
 
     }
 
+    /**
+     * Hashtable practice.
+     */
     public static void hashtablePractice() {
         Hashtable exampleTable = new Hashtable();
 
     }
 
+    /**
+     * Linked list practice.
+     */
     public static void linkedListPractice() {
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("Emin");
@@ -126,6 +152,9 @@ public class CollectionNotes {
         System.out.println(linkedList);
     }
 
+    /**
+     * Hash map practice.
+     */
     public static void hashMapPractice() {
         HashMap<Character, Integer> hashMap = new HashMap<>();
         hashMap.put('a', 42);
@@ -143,6 +172,9 @@ public class CollectionNotes {
         hashMap.values(); // all values
     }
 
+    /**
+     * Hash set practice.
+     */
     public static void hashSetPractice() {
 
         HashSet<Integer> numberHashSet = new HashSet<>(); // is sorts based on numberHashSet.hashCode()
@@ -160,6 +192,9 @@ public class CollectionNotes {
         }
     }
 
+    /**
+     * Stack practice.
+     */
     public static void stackPractice() {
         System.out.println("\nStack Notes :");
         System.out.println();
@@ -178,6 +213,9 @@ public class CollectionNotes {
         System.out.println(games);       //   []
     }
 
+    /**
+     * Queue practice.
+     */
     public static void queuePractice() {
         System.out.println("\nQueue Notes :");
         System.out.println();

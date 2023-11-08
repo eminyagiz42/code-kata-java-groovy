@@ -1,12 +1,20 @@
 package com.codekata.leetcode.provinces;
 
 
+/**
+ * The type Union find.
+ */
 public class UnionFind {
 
     private int count;
     private final int[] id;
     private final int[] rank;
 
+    /**
+     * Instantiates a new Union find.
+     *
+     * @param n the n
+     */
     public UnionFind(int n) {
         count = n;
         id = new int[n];
@@ -16,6 +24,12 @@ public class UnionFind {
         }
     }
 
+    /**
+     * Union by rank.
+     *
+     * @param u the u
+     * @param v the v
+     */
     public void unionByRank(int u, int v) {
         final int i = find(u);
         final int j = find(v);
@@ -33,6 +47,11 @@ public class UnionFind {
         --count;
     }
 
+    /**
+     * Gets count.
+     *
+     * @return the count
+     */
     public int getCount() {
         return count;
     }

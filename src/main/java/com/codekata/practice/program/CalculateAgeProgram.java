@@ -4,8 +4,16 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Scanner;
 
+/**
+ * The type Calculate age program.
+ */
 public class CalculateAgeProgram {
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hello, What is your name ?");

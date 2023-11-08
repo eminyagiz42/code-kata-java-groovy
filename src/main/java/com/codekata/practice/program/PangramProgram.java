@@ -4,10 +4,21 @@ import com.codekata.util.Constant;
 
 import java.util.HashSet;
 
+/**
+ * The type Pangram program.
+ */
 public class PangramProgram {
 
+    /**
+     * The constant NUMBER_OF_LETTERS_IN_ALPHABET.
+     */
     public static final int NUMBER_OF_LETTERS_IN_ALPHABET = 26;
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
 
         //Pangram means, it is a sentence that contains all letters in alphabet.
@@ -55,6 +66,12 @@ public class PangramProgram {
         return pangram;
     }
 
+    /**
+     * Has all alphabet letter boolean.
+     *
+     * @param str the str
+     * @return the boolean
+     */
     public static boolean hasAllAlphabetLetter(String str) { // 0ms  author: GeeksForGeeks
         final int len = str.length();
         str = str.toLowerCase();

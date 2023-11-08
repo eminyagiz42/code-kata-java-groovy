@@ -2,9 +2,17 @@ package com.codekata.hackerrank;
 
 import java.util.*;
 
+/**
+ * The type Java string tokens.
+ */
 class JavaStringTokens {
    //Problem:https://www.hackerrank.com/challenges/java-string-tokens/problem
 
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
