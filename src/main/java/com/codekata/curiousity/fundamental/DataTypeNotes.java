@@ -24,7 +24,28 @@ public class DataTypeNotes {
         Character
         */
 
-        //TODO Some times conversion maybe not required weather it covers it
+        // Type Conversion
+        // double -> float -> long -> int -> short -> byte (Narrowing)
+
+        double doubleVar = 100.04;
+        long longVar = (long)doubleVar;
+        int intVar = (int)longVar;
+        System.out.println("Double value " + doubleVar);
+        System.out.println("Long value " + longVar);
+        System.out.println("Int value " + intVar);
+
+        //However Some times conversion maybe not required, it does automatically
+
+        // byte -> short -> int -> long -> float -> double (Widening )
+
+        int autoInt = 100;
+        long autoLong = autoInt; // Automatic type conversion
+        float autoFloat = autoLong;
+        double autoDouble = autoInt;
+        System.out.println("Int value " + autoInt);
+        System.out.println("Long value " + autoLong);
+        System.out.println("Float value " + autoFloat);
+        System.out.println("Double value " + autoDouble); // IF we convert int to double, no need to cast.
 
     }
 }
