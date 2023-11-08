@@ -68,6 +68,7 @@ _SAP Commerce Resources._
 - [Medium Hybris Installation](https://medium.com/@halilugur/what-is-hybris-and-how-to-install-it-part-1-23b3d9e3f5b1)
 - [Database column in Hybris](https://checkedexception.com/blog/change-a-database-column-type-in-sap-hybris-commerce)
 - [hybrisarchitect](https://hybrisarchitect.com/)
+- [yusuf adiputera sap blog](https://people.sap.com/adiputera#content:blogposts)
 - [helphybris blog](https://www.helphybris.com/)
 - [hybrisinfo](https://hybrisinfo.wordpress.com/2018/01/12/stop-solr-manually/)
 - [Groocy Basics](https://www.tutorialspoint.com/groovy/groovy_basic_syntax.htm)
