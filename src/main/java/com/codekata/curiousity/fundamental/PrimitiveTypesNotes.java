@@ -3,7 +3,7 @@ package com.codekata.curiousity.fundamental;
 /**
  * The type Data type notes.
  */
-public class DataTypeNotes {
+public class PrimitiveTypesNotes {
     /**
      * The entry point of application.
      *
@@ -54,6 +54,11 @@ public class DataTypeNotes {
         System.out.println("Long value " + autoLong);
         System.out.println("Float value " + autoFloat);
         System.out.println("Double value " + autoDouble); // IF we convert int to double, no need to cast.
+
+
+        int weCanUseForReadability = 1_000_000; // rare but good format for int
+        System.out.println("we can use int like this = " + weCanUseForReadability);
+        // it will print exactly same 1000000 (1 million)
 
     }
 }

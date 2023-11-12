@@ -10,9 +10,9 @@ public class SuccessfulPairs {
 
         //https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
 
-        int[] spells = {17, 12, 10, 2, 7, 2, 11, 20, 8};
-        int[] potions = {17, 12, 10, 2, 7, 2, 11, 20, 8};
-        long success = 3l;
+        int[] spells = {5, 1, 3};
+        int[] potions = {1, 2, 3, 4, 5};
+        long success = 7L;
         final int[] ints = successfulPairs(spells, potions, success);
         for (int anInt : ints) {
             System.out.println("anInt = " + anInt);
