@@ -162,9 +162,11 @@ public class IsSubsequence {
     public boolean isSubsequenceM(String s, String t) { // Best memory 38.5mb
         int i = 0, j = 0;
 
-        while (i < s.length() && j < t.length())
-            if (s.charAt(i) == t.charAt(j++))
+        while (i < s.length() && j < t.length()){
+            if (s.charAt(i) == t.charAt(j++)) {
                 i++;
+            }
+        }
 
         return i == s.length();
     }
