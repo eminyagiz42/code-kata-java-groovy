@@ -9,6 +9,9 @@ import java.util.stream.Collectors;
 public class SearchSuggestionsSystem {
 
     public static void main(String[] args) {
+
+        // https://leetcode.com/problems/search-suggestions-system/
+
         String[] products = {"mobile","mouse","moneypot","monitor","mousepad"};
         String searchWord = "mouse";
 
