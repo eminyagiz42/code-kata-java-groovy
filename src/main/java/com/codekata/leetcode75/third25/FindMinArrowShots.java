@@ -6,6 +6,9 @@ import java.util.Comparator;
 public class FindMinArrowShots {
 
     public static void main(String[] args) {
+
+        // https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons
+
         int[][] intervals = {{10,16},{2,8},{1,6},{7,12}}; // output: 2
 
         System.out.println(findMinArrowShots(intervals));
