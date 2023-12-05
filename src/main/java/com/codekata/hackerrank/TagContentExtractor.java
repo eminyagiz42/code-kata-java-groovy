@@ -1,19 +1,25 @@
-package com.codekata.javastream;
+package com.codekata.hackerrank;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * The type Tag content practice.
  */
-public class TagContentPractice {
+public class TagContentExtractor {
 
-    /**
+	public static final String REGEX_FOR_TAG = "<(.+)>([^<]+)</\\1>";
+
+	/**
      * Main.
      *
      * @param args the args
      */
     public static void main(String[] args){
+
+    	//https://www.hackerrank.com/challenges/tag-content-extractor/
 
 		String a = "<h1>Nayeem loves counseling</h1>";
 		String b= "<h1><h1>Sanjay has no watch</h1></h1><par>So wait for a while</par>";
@@ -39,12 +45,25 @@ public class TagContentPractice {
 		}
 	}
 
+	public static void printWithoutTag(String textWithTag) {
+		boolean matchFound = false;
+		Pattern pattern = Pattern.compile(REGEX_FOR_TAG);
+		Matcher matcher = pattern.matcher(textWithTag);
+		while (matcher.find()) {
+			System.out.println(matcher.group(2));
+			matchFound = true;
+		}
+		if (!matchFound) {
+			System.out.println("None");
+		}
+	}
+
     /**
      * Print without tag.
      *
      * @param textWithTag the text with tag
      */
-    public static void printWithoutTag(String textWithTag ) {
+    public static void printWithoutTag2(String textWithTag ) {
 		
 		String text = textWithTag.replaceAll("<","").replaceAll(">","").replaceAll("/","");
 		if(text.isEmpty()) {
