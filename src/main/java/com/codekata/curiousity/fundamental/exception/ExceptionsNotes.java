@@ -110,5 +110,15 @@ public class ExceptionsNotes {
             // always run
             scanner.close();
         }
+
+/*
+        try {
+
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+
+ */
+
     }
 }
