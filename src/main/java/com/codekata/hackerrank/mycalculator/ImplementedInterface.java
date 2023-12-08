@@ -1,32 +1,14 @@
-package com.codekata.hackerrank;
+package com.codekata.hackerrank.mycalculator;
 
-import java.util.*;
+import java.util.Scanner;
 
-interface AdvancedArithmetic {
-
-    int divisor_sum(int n);
-}
-
-class MyCalculator implements AdvancedArithmetic {
-
-    public int divisor_sum(int n) {
-        int sum = 0;
-        for (int i = n; i > 0; i--) {
-            if (n % i == 0) {
-                sum += i;
-            }
-        }
-        return sum;
-    }
-
-}
-
-class Solution {
+class ImplementedInterface {
 
     public static void main(String[] args) {
         MyCalculator my_calculator = new MyCalculator();
         System.out.print("I implemented: ");
         ImplementedInterfaceNames(my_calculator);
+        System.out.print("Give me a number to find sum of divisor");
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.print(my_calculator.divisor_sum(n) + "\n");
@@ -44,5 +26,3 @@ class Solution {
         }
     }
 }
-
-
