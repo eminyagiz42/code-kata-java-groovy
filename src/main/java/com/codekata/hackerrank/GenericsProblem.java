@@ -4,6 +4,9 @@ package com.codekata.hackerrank;
 public class GenericsProblem {
 
     public static void main(String[] args) {
+
+        //https://www.hackerrank.com/challenges/java-generics/problem
+        
         //Printer myPrinter = new Printer();
         Integer[] intArray = {1, 2, 3};
         String[] stringArray = {"Hello", "World"};
