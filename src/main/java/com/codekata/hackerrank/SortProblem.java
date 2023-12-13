@@ -35,6 +35,8 @@ public class SortProblem {
 
 class Student {
 
+    Student(){}
+
     private int id;
     private String fname;
     private double cgpa;
