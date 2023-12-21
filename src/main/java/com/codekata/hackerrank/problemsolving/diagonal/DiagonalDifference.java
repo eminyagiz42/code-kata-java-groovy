@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.problemsolving;
+package com.codekata.hackerrank.problemsolving.diagonal;
 
 import java.io.BufferedReader;
 import java.io.IOException;
