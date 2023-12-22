@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.problemsolving;
+package com.codekata.hackerrank.problemsolving.plusminus;
 
 
 import java.io.*;
