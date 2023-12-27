@@ -43,11 +43,9 @@ class Result {
      *  4. INTEGER v2
      */
     public static String kangaroo(int x1, int v1, int x2, int v2) {
-        int oneLocation = 0;
-        int twoLocation = 0;
         for (int i = 0; i < 10_000; i++) {
-            oneLocation = x1 + v1 * i;
-            twoLocation = x2 + v2 * i;
+            int oneLocation = x1 + v1 * i;
+            int twoLocation = x2 + v2 * i;
             //System.out.println(oneLocation +" - "+ twoLocation);
             if (oneLocation == twoLocation) {
                 return "YES";
