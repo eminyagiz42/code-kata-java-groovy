@@ -19,16 +19,15 @@ public class RandomNumberNotes {
         final int nextInt = faker.random().nextInt(1, 6);//possible numbers 1,2,3,4,5,6
         System.out.println(nextInt);
 
-        final Set<Integer> uniqueRandomNumbers = getUniqueRandomNumbers(10);
-        System.out.println(uniqueRandomNumbers);
+        final Set<Integer> uniqueRandomNumbers = getRandomNumbers(3, 10);
+        System.out.println(uniqueRandomNumbers);//possible numbers 1,2,3,4,5,6,7,8,9,10
     }
 
-    public static Set<Integer> getUniqueRandomNumbers(int howMany) {
+    public static Set<Integer> getRandomNumbers(int size, int maxRange) {
         Faker faker = new Faker();
         Set<Integer> randomNumbers = new LinkedHashSet<>();
-        while (randomNumbers.size() != howMany) {
-            randomNumbers.add(faker.random().nextInt(1, 10)); //Range 1 and 10 inclusive
-            //randomNumbers.add(faker.random().nextInt(10)); //Range 0 inclusive, 10 exclusive
+        while (randomNumbers.size() != size) {
+            randomNumbers.add(faker.random().nextInt(1, maxRange));
         }
         return randomNumbers;
     }
