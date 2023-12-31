@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.daysofcode;
+package com.codekata.hackerrank.daysofcode.day1;
 
 import java.util.Scanner;
 
