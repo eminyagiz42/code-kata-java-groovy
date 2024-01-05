@@ -17,7 +17,6 @@ public class AccessProblem {
             int num = Integer.parseInt(br.readLine().trim());
             Object o;// Must be used to hold the reference of the instance of the class Solution.Inner.Private
 
-            //Write your code here
             o = new Inner().new Private();
             final String result = ((Inner.Private) o).powerof2(num);
             System.out.println(num + " is " + result);

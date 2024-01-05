@@ -62,9 +62,10 @@ class Result {
     public static int getTotalX(List<Integer> a, List<Integer> b) {
         List<Integer> rangeNumbers = getAllFactorsInRange(a, b);
 
-        a.addAll(b);// combine two lists
+        List<Integer> combined = new ArrayList<>(a);
+        combined.addAll(b);// combine two lists
 
-        for (int by : a) { // remove factors if it does not divide evenly
+        for (int by : combined) { // remove factors if it does not divide evenly
             rangeNumbers.removeIf(range -> Math.max(by, range) % Math.min(by, range) != 0);
         }
 
