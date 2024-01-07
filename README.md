@@ -1,4 +1,4 @@
-This is personal # javaKata. I am going to practice, follow my curiousity and solve some leetcode questions.
+This is personal # javaKata. I am going to practice, follow my curiosity and solve some leetcode questions.
 
 My Java & Spring Bookmarks (Not ordered yet!)
 

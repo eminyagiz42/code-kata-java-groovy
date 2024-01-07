@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.daysofcode.day8;
+package com.codekata.hackerrank.daysofcode.first10.day8;
 
 import java.util.*;
 import java.io.*;

@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.daysofcode.day6;
+package com.codekata.hackerrank.daysofcode.first10.day6;
 
 import java.io.BufferedReader;
 import java.io.IOException;

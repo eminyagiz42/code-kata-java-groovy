@@ -1,10 +1,8 @@
-package com.codekata.hackerrank.daysofcode.days10;
+package com.codekata.hackerrank.daysofcode.first10.day10;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
-public class Days10 {
+public class Day10 {
 
     public static void main(String[] args) throws IOException {
         //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

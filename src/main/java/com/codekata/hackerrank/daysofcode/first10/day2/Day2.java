@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.daysofcode.day2;
+package com.codekata.hackerrank.daysofcode.first10.day2;
 
 
 import java.io.IOException;
