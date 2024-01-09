@@ -1,4 +1,4 @@
-package com.codekata.curiousity.fundamental.abstractConcept;
+package com.codekata.curiousity.fundamental.abstractconcept;
 
 public class MainExample {
 

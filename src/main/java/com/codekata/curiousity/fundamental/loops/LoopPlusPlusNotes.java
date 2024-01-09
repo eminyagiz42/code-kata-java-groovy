@@ -1,4 +1,4 @@
-package com.codekata.curiousity.fundamental.loop;
+package com.codekata.curiousity.fundamental.loops;
 
 /**
  * The type Loop plus plus notes.
