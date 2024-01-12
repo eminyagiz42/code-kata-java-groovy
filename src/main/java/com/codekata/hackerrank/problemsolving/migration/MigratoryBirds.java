@@ -12,6 +12,8 @@ import static java.util.stream.Collectors.toList;
 
 public class MigratoryBirds {
 
+    //https://www.hackerrank.com/challenges/migratory-birds/problem
+
     public static void main(String[] args) throws IOException {
         /*
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

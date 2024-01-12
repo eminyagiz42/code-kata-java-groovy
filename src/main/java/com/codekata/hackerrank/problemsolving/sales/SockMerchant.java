@@ -29,7 +29,6 @@ public class SockMerchant {
 
         //List<Integer> ar = Arrays.asList(10, 20, 20, 10, 10, 30, 50, 10, 20);
         //int n = 9; //Expected output: 3
-
         List<Integer> ar = Arrays.asList(1, 1, 3, 1, 2, 1, 3, 3, 3, 3);
         int n = 10; //Expected output: 4
         int result = Result.sockMerchant(n, ar);
