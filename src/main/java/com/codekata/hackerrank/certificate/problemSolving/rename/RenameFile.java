@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.certificate.problemSolving;
+package com.codekata.hackerrank.certificate.problemSolving.rename;
 
 
 import java.io.IOException;

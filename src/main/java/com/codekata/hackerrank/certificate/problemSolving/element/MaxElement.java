@@ -1,4 +1,4 @@
-package com.codekata.hackerrank.certificate.problemSolving;
+package com.codekata.hackerrank.certificate.problemSolving.element;
 
 
 import java.io.*;
@@ -21,9 +21,13 @@ public class MaxElement {
         */
         //int n = 3, maxSum = 7, k = 1; //expected output: 3  --> 1,2,1
         int n = 4, maxSum = 6, k = 2; //expected output: 2 --> 1,1,2,1
-        int result = maxElement(n, maxSum, k);
+        int result = Result.maxElement(n, maxSum, k);
         System.out.println(result);
     }
+}
+
+
+class Result {
 
     /*
      * Complete the 'maxElement' function below.
