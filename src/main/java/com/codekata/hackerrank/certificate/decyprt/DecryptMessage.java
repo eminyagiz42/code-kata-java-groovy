@@ -8,6 +8,7 @@ import static java.util.stream.Collectors.joining;
 
 
 public class DecryptMessage {
+
     public static void main(String[] args) throws IOException {
         /*
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -22,7 +23,8 @@ public class DecryptMessage {
 
         //String encryptedMessage = "world hel2o";
         //String encryptedMessage = "seaside the to sent be to ne2ds army ten of team a";
-        String encryptedMessage = "mis2is2ip2i ba3";
+        //String encryptedMessage = "mis2is2ip2i ba3";
+        String encryptedMessage = "   world   hel2o   ";
         String result = Result.decryptMessage(encryptedMessage);
         System.out.println(result);
     }
@@ -43,9 +45,8 @@ class Result {
      * The function is expected to return a STRING.
      * The function accepts STRING encryptedMessage as parameter.
      */
-
-    public static String decryptMessage(String encryptedMessage) {
-        final String[] messages = encryptedMessage.split(" ");
+    public static String decryptMessage(String encryptedMessage) {  // Compiled successfully. 11/15 test cases passed
+        final String[] messages = encryptedMessage.split(" "); // I'd like to keep the space delimiter ((?= ))
         StringBuilder builder = new StringBuilder();
         for (int i = messages.length - 1; i >= 0; i--) {
             if (messages[i].matches(".*\\d.*")) {
