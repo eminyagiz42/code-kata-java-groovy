@@ -6,10 +6,8 @@ import java.util.Scanner;
 class JavaSkillsCertificate {
 
     public static void main(String[] args) {
-       
         Parser parser = new Parser();
         Scanner in = new Scanner(System.in);
-
         while (in.hasNext()) {
             System.out.println(parser.isBalanced(in.next()));
         }
@@ -24,7 +22,6 @@ class Parser {
 
     static String isBalanced(String s) {
         while (s.length() != (s = s.replaceAll(REGEX_PATTERN, "")).length());
-
         return String.valueOf(s.isEmpty()); // Output: String "true" "false"
     }
 }
