@@ -27,5 +27,4 @@ public class A {
         return i + j;
     }
 }
-
  */
