@@ -10,7 +10,6 @@ public class StaticAnalysis /* extends A*/ {
         System.out.println(j);
         // Output: 8, 7
          */
-
         short s = 9;
         //System.out.println(add(s, 6));
     }
