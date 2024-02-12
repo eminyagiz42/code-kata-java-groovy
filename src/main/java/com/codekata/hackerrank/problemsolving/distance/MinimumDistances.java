@@ -23,10 +23,9 @@ public class MinimumDistances {
                 .collect(toList());
         int result = Result.minimumDistances(a);
         bufferedReader.close();
-
         /*
-        //List<Integer> a = Arrays.asList(7, 1, 3, 4, 1, 7);
-        List<Integer> a = Arrays.asList(1, 2, 3, 4, 10);
+        //List<Integer> a = Arrays.asList(7, 1, 3, 4, 1, 7); // expected output: 3
+        List<Integer> a = Arrays.asList(1, 2, 3, 4, 10); // expected output: -1
         int result = Result.minimumDistances(a);
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
