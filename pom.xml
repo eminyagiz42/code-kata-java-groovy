@@ -2,16 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.codekata</groupId>
     <artifactId>code-kata-java-groovy-mvn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-
+        <javadoc.version>3.6.2</javadoc.version>
+        <checkstyle.version>3.1.0</checkstyle.version>
+        <commons.version>3.12.0</commons.version>
+        <lombok.version>1.18.24</lombok.version>
+        <junit.version>4.13.2</junit.version>
+        <common.collection.version>4.4</common.collection.version>
+        <groovy.version>3.0.9</groovy.version>
+        <maven.javadoc.version>3.6.2</maven.javadoc.version>
+        <jackson.databind.version>2.16.1</jackson.databind.version>
+        <json.simple.version>1.1.1</json.simple.version>
         <datafaker.version>1.9.0</datafaker.version>
     </properties>
 
@@ -20,12 +29,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.6.2</version>
+                <version>${javadoc.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>${checkstyle.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -34,7 +43,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
+                    <configLocation>../birberber/checkstyle.xml</configLocation>
                     <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
                     <sourceDirectories>
                         <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
@@ -49,55 +58,51 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.12.0</version>
+            <version>${commons.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
-            <version>4.4</version>
+            <version>${common.collection.version}</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>3.0.9</version>
+            <version>${groovy.version}</version>
             <type>pom</type>
         </dependency>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.6.2</version>
+            <version>${maven.javadoc.version}</version>
         </dependency>
         <dependency>
             <groupId>net.datafaker</groupId>
             <artifactId>datafaker</artifactId>
             <version>${datafaker.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.16.1</version>
+            <version>${jackson.databind.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
+            <version>${json.simple.version}</version>
         </dependency>
-
-
     </dependencies>
 
 </project>
