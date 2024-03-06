@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+group "com.codekata"
+version "0.9"
+
+sourceCompatibility = 17
+targetCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    javadocVersion = "3.6.2"
+    commonsVersion = "3.12.0"
+    checkstyleVersion = "10.14.0"
+    lombokVersion = "1.18.30"
+    junitVersion = "4.13.2"
+    commonCollectionVersion = "4.4"
+    groovyVersion = "3.0.9"
+    mavenJavadocVersion = "3.6.2"
+    jacksonDatabindVersion = "2.16.1"
+    jsonSimpleVersion = "1.1.1"
+    datafakerVersion = "1.9.0"
+}
+
+dependencies {
+    implementation "org.apache.commons:commons-lang3:${commonsVersion}"
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    implementation "org.apache.commons:commons-collections4:${commonCollectionVersion}"
+    implementation "org.codehaus.groovy:groovy-all:${groovyVersion}"
+    implementation "net.datafaker:datafaker:${datafakerVersion}"
+    implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonDatabindVersion}"
+    implementation "com.googlecode.json-simple:json-simple:${jsonSimpleVersion}"
+    implementation "com.google.guava:guava:33.0.0-jre"
+    testImplementation "junit:junit:${junitVersion}"
+}
+
+checkstyle {
+    toolVersion "8.17"
+    configFile = file("${projectDir}/config/checkstyle/checkstyle.xml")
+    def suppressionsFile = new File("${projectDir}/config/checkstyle/checkstyle-suppressions.xml")
+    configProperties.checkstyleSuppressionsPath = suppressionsFile.absolutePath
+}
+
+task checkstyle(type: Checkstyle) {
+    source "src"
+    include "**/*.java"
+    exclude "**/gen/**"
+    classpath = files()
+}
