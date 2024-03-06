@@ -48,6 +48,9 @@ Thumbs.db
 *.mov
 *.wmv
 
+#idea generated
+*.iml
+
 # Ignore Gradle project-specific cache directory
 .gradle
 
