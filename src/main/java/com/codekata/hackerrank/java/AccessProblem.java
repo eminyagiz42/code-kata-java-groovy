@@ -10,7 +10,7 @@ public class AccessProblem {
     //https://www.hackerrank.com/challenges/can-you-access/problem
 
     public static void main(String[] args) throws Exception {
-        DoNotTerminate.forbidExit();
+       // DoNotTerminate.forbidExit();
 
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -45,6 +45,7 @@ class DoNotTerminate { //This class prevents exit(0)
         private static final long serialVersionUID = 1L;
     }
 
+    /*
     public static void forbidExit() {
         final SecurityManager securityManager = new SecurityManager() {
             @Override
@@ -56,5 +57,6 @@ class DoNotTerminate { //This class prevents exit(0)
         };
         System.setSecurityManager(securityManager);
     }
+     */
 }
 
