@@ -33,6 +33,7 @@ dependencies {
     implementation "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     implementation "org.apache.commons:commons-collections4:${commonCollectionVersion}"
+    implementation "commons-io:commons-io:2.15.1"
     implementation "org.codehaus.groovy:groovy-all:${groovyVersion}"
     implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonDatabindVersion}"
     implementation "com.google.guava:guava:${guavaVersion}"
