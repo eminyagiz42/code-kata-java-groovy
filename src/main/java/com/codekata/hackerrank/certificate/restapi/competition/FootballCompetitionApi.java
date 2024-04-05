@@ -15,6 +15,8 @@ import java.nio.charset.StandardCharsets;
 
 public class FootballCompetitionApi {
 
+    //TODO Review Later
+
     //https://dailyjournal.gitbook.io/solutions/v/hackerrank-solutions/certify/rest-api-intermediate#id-2-rest-api-football-competition-winners-goals
 
     public static void main(String[] args) throws IOException {
@@ -56,7 +58,7 @@ class Result {
         int sum = 0;
 
         try {
-            competition = URLEncoder.encode(competition, StandardCharsets.UTF_8);
+            competition = URLEncoder.encode(competition, StandardCharsets.UTF_8.toString());
             String team = getWinner(competition, year); // Chelsea
             int page1 = 1; //page must start from 1
             String teamSide = "team1";

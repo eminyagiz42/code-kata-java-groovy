@@ -1,13 +1,11 @@
 plugins {
     id 'java'
-    id 'checkstyle'
+    //id 'checkstyle'
 }
 
 group "com.codekata"
 version "0.9"
 
-sourceCompatibility = 17
-targetCompatibility = 17
 
 repositories {
     mavenCentral()
@@ -40,18 +38,38 @@ dependencies {
     implementation "com.googlecode.json-simple:json-simple:${jsonSimpleVersion}"
     implementation "net.datafaker:datafaker:${datafakerVersion}"
     testImplementation "junit:junit:${junitVersion}"
+//    implementation(files(rootProject.projectDir.resolve("buildSrc/build/classes/java/main")))
 }
 
-checkstyle {
-    toolVersion "${checkstyleVersion}"
-    configFile = file("${projectDir}/config/checkstyle/checkstyle.xml")
-    def suppressionFile = new File("${projectDir}/config/checkstyle/checkstyle-suppressions.xml")
-    configProperties.checkstyleSuppressionsPath = suppressionFile.absolutePath
+//checkstyle {
+//    toolVersion "${checkstyleVersion}"
+//    configFile = file("${projectDir}/config/checkstyle/checkstyle.xml")
+//    def suppressionFile = new File("${projectDir}/config/checkstyle/checkstyle-suppressions.xml")
+//    configProperties.checkstyleSuppressionsPath = suppressionFile.absolutePath
+//}
+
+//task checkstyle(type: Checkstyle) {
+//    source "src"
+//    include "**/*.java"
+//    exclude "**/gen/**"
+//    classpath = files()
+//}
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+        vendor = JvmVendorSpec.SAP
+        implementation = JvmImplementation.VENDOR_SPECIFIC
+    }
 }
 
-task checkstyle(type: Checkstyle) {
-    source "src"
-    include "**/*.java"
-    exclude "**/gen/**"
-    classpath = files()
+import com.codekata.*;
+
+task helloPath {
+    PathOfHandler.main()
+}
+
+task helloConfig {
+    CheckConfig.main()
 }

@@ -9,6 +9,8 @@ import static java.util.stream.Collectors.joining;
 
 public class DecryptMessage {
 
+    //TODO Review Later
+
     public static void main(String[] args) throws IOException {
         /*
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -94,7 +96,12 @@ class Result {
             decryptedSentence.append(reversedSentence, prevIndex, matcher.start());
             char letter = matcher.group(1).charAt(0);
             int frequency = Integer.parseInt(matcher.group(2));
-            decryptedSentence.append(String.valueOf(letter).repeat(Math.max(0, frequency)));
+            //decryptedSentence.append(String.valueOf(letter).repeat(Math.max(0, frequency)));
+            StringBuilder repeatedChars = new StringBuilder();
+            for (int i = 0; i < frequency; i++) {
+                repeatedChars.append(letter);
+            }
+            decryptedSentence.append(repeatedChars.toString());
             prevIndex = matcher.end();
         }
         decryptedSentence.append(reversedSentence.substring(prevIndex));

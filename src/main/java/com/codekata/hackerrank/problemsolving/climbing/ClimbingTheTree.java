@@ -63,6 +63,62 @@ class Result {
      *  2. INTEGER_ARRAY player
      */
     public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+        int n = ranked.size();
+        int m = player.size();
+
+        List<Integer> res = new ArrayList<>();
+        List<Integer> rank = new ArrayList<>();
+
+        rank.add(0, 1);
+
+        for (int i = 1; i < n; i++) {
+            if (ranked.get(i) == ranked.get(i - 1)) {
+                ranked.add(i, ranked.get(i - 1));
+            } else {
+                rank.add(i, rank.get(i - 1) + 1);
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            int score = player.get(i);
+            if (score > ranked.get(0)) {
+                res.add(i, 1);
+            } else if (score < ranked.get(n - 1)) {
+                res.add(i, rank.get(n - 1) + 1);
+            } else {
+                int index = binarySearch(ranked, score);
+                res.add(i, rank.get(index));
+
+            }
+        }
+        return res;
+
+    }
+
+    private static int binarySearch(List<Integer> a, int key) {
+
+        int lo = 0;
+        int hi = a.size() - 1;
+
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
+            if (a.get(mid) == key) {
+                return mid;
+            } else if (a.get(mid) < key && key < a.get(mid - 1)) {
+                return mid;
+            } else if (a.get(mid) > key && key >= a.get(mid + 1)) {
+                return mid + 1;
+            } else if (a.get(mid) < key) {
+                hi = mid - 1;
+            } else if (a.get(mid) > key) {
+                lo = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+
+    public static List<Integer> climbingLeaderboard4(List<Integer> ranked, List<Integer> player) {
         final List<List<Integer>> rankAndOrderList = getRankAndOrderList(ranked);
 
         List<Integer> result = new ArrayList<>();
@@ -84,7 +140,7 @@ class Result {
     }
 
 
-    public static List<Integer> climbingLeaderboard2(List<Integer> ranked, List<Integer> player) { //It exceeds the timeout
+    public static List<Integer> climbingLeaderboard23(List<Integer> ranked, List<Integer> player) { //It exceeds the timeout
         final List<List<Integer>> rankAndOrderList = getRankAndOrderList(ranked);
         List<Integer> result = new ArrayList<>();
 
@@ -142,4 +198,60 @@ class Result {
             return -1;
         }
     }
+
+
+    public static List<Integer> climbingLeaderboardWay(List<Integer> ranked, List<Integer> player) {
+        List<Integer> result = new ArrayList<Integer>();
+        TreeMap<Integer, Integer> rankMap = new TreeMap<Integer, Integer>();
+
+        // Assertion: The Ranked List is already sorted in descending order
+        // Derive the Rank for each Score and store it in a Sorted Map i.e., TreeMap
+        int count=0;
+        for(int value : ranked){
+            if(!rankMap.containsKey(value)){
+                count++;
+                rankMap.put(value, count);
+            }
+        }
+
+        System.out.println(rankMap);
+
+        for(int score : player){
+            List<Integer> listToRemove = new ArrayList<Integer>();
+
+            // Edge Case: When the score is greater than the Leaderboard
+            if(score > rankMap.lastKey()){
+                result.add(1);
+                continue;
+            }
+
+            for(int value : rankMap.keySet()){
+                if(score > value){
+                    // If the score is greater than the current value on Rank Map,
+                    // then we don't need to compare it anymore for any of the scores that come in future
+                    listToRemove.add(value);
+                }
+                else if(score < value){
+                    // If the score is lesser than the curren value on Rank Map,
+                    // then increment the rank and add it to the list
+                    result.add(rankMap.get(value) + 1);
+                    break;
+                }
+                else{
+                    // If the score is equal to the curren value on Rank Map,
+                    // then add the current rank to the list
+                    result.add(rankMap.get(value));
+                    break;
+                }
+            }
+
+            // Remove all the values which are past the current score
+            for(int value : listToRemove)
+                rankMap.remove(value);
+        }
+
+        return result;
+    }
+
+
 }

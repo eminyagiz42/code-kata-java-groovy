@@ -2,10 +2,7 @@ package com.codekata.hackerrank.problemsolving.magic;
 
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MagicSquareForming {
 
@@ -34,25 +31,25 @@ public class MagicSquareForming {
         bufferedWriter.close();
         */
 
-        List<List<Integer>> s = List.of(
-                List.of(5, 3, 4),
-                List.of(1, 5, 8),
-                List.of(6, 4, 2)); // expected output: 7
+        List<List<Integer>> s = Arrays.asList(
+                Arrays.asList(5, 3, 4),
+                Arrays.asList(1, 5, 8),
+                Arrays.asList(6, 4, 2)); // expected output: 7
 
-        List<List<Integer>> s1 = List.of(
-                List.of(4, 8, 2),
-                List.of(4, 5, 7),
-                List.of(6, 1, 6)); // expected output: 4
+        List<List<Integer>> s1 = Arrays.asList(
+                Arrays.asList(4, 8, 2),
+                Arrays.asList(4, 5, 7),
+                Arrays.asList(6, 1, 6)); // expected output: 4
 
-        List<List<Integer>> s2 = List.of(
-                List.of(4, 9, 2),
-                List.of(3, 5, 7),
-                List.of(8, 1, 5)); // expected output: 1
+        List<List<Integer>> s2 = Arrays.asList(
+                Arrays.asList(4, 9, 2),
+                Arrays.asList(3, 5, 7),
+                Arrays.asList(8, 1, 5)); // expected output: 1
 
-        List<List<Integer>> s3 = List.of(
-                List.of(1, 3, 8),
-                List.of(6, 4, 1),
-                List.of(2, 6, 5)); // expected output: 9
+        List<List<Integer>> s3 = Arrays.asList(
+                Arrays.asList(1, 3, 8),
+                Arrays.asList(6, 4, 1),
+                Arrays.asList(2, 6, 5)); // expected output: 9
 
         int result = Result.formingMagicSquare(s3);
         System.out.println(result);

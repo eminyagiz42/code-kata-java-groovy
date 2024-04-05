@@ -3,6 +3,7 @@ package com.codekata.hackerrank.problemsolving.triplet;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CompareTriplets {
@@ -29,10 +30,10 @@ public class CompareTriplets {
         bufferedWriter.close();
          */
 
-        //List<Integer> a = List.of(17, 28, 30);
-        //List<Integer> b = List.of(99 ,16, 8);
-        List<Integer> a = List.of(5, 6, 7);
-        List<Integer> b = List.of(3 ,6 ,10);
+        //List<Integer> a = Arrays.asList(17, 28, 30);
+        //List<Integer> b = Arrays.asList(99 ,16, 8);
+        List<Integer> a = Arrays.asList(5, 6, 7);
+        List<Integer> b = Arrays.asList(3 ,6 ,10);
         List<Integer> result = Result.compareTriplets(a, b);
         System.out.println(result);
     }

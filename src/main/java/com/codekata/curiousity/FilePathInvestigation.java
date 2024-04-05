@@ -10,9 +10,9 @@ public class FilePathInvestigation {
 
         System.out.println(getFilePath(t));
         //input:
-        //D:\Workspace\b2b-fast-track-template\novarto-logo.jpg
+        //D:\Workspace\logo.jpg
         //output:
-        //D:\\Workspace/b2b-fast-track-template/novarto-logo.jpg
+        //D:\\Workspace/logo.jpg
 
     }
 

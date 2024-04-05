@@ -82,7 +82,7 @@ class Result {
             }
         }
 
-        return List.of(countBest, countWorst);
+        return Arrays.asList(countBest, countWorst);
     }
 
 }
