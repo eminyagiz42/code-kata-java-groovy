@@ -57,7 +57,6 @@ _Sites to read on awsome._
 
 - [Awsome java websites to read](https://github.com/akullpp/awesome-java#websites)
 
-
 ### Related Awesome Lists
 
 _Awesome Lists related to the Java & JVM ecosystem._
