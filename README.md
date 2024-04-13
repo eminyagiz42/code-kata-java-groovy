@@ -65,7 +65,6 @@ _Awesome Lists related to the Java & JVM ecosystem._
 - [Useful Java Links](https://github.com/Vedenin/useful-java-links)
 - [Java Developer Roadmap](https://github.com/s4kibs4mi/java-developer-roadmap)
 
-
 ### Podcasts and Screencasts
 
 _Something to look at or listen to while programming._
