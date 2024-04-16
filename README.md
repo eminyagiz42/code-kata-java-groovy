@@ -9,6 +9,7 @@ My Java & Spring Bookmarks (Not ordered yet!)
     - [Related Awesome Lists](#related-awesome-lists)
     - [Podcasts and Screencasts](#podcasts-and-screencasts)
 
+
 ## Resources
 
 ### Websites
