@@ -4,7 +4,7 @@ public class InputBuilderDemo {
 
     public static void main(String[] args) {
 
-        //Builder pattern
+        //Builder pattern is nice but sometimes they prefer getter/setter for simplicity
 
         String templateTheme = "";
         String siteType = "";
