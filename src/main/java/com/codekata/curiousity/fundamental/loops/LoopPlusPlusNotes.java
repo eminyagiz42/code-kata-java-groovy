@@ -45,6 +45,6 @@ public class LoopPlusPlusNotes {
         for (int l = 1; l < 5; l = l + 2) {
             System.out.println("l = " +  l);
         }
-
     }
+    
 }
