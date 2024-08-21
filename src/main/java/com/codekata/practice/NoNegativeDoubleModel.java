@@ -24,7 +24,4 @@ public class NoNegativeDoubleModel {
     public void setAvailableQuantity(Double availableQuantity) {
 		this.availableQuantity = availableQuantity;
 	}
-	 
-	 
-	
 }
