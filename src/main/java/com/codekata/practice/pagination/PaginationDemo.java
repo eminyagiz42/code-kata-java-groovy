@@ -1,5 +1,6 @@
 package com.codekata.practice.pagination;
 
+import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
@@ -16,9 +17,14 @@ public class PaginationDemo {
         int partition = StringUtils.isNumeric(input) ? Integer.parseInt(input) : 1;
 
         List<List<String>> subLists = getSubLists(yourlist, partition);
-
         for (List<String> list : subLists) {
             System.out.println(list);
+        }
+
+        // Code Review : Use already exist library
+        List<List<String>> subLists2 = ListUtils.partition(yourlist, partition);
+        for (List<String> list2 : subLists2) {
+            System.out.println(list2);
         }
     }
 
