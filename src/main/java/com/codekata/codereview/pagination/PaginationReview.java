@@ -1,4 +1,4 @@
-package com.codekata.practice.pagination;
+package com.codekata.codereview.pagination;
 
 import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PaginationDemo {
+public class PaginationReview {
 
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class PaginationDemo {
             System.out.println(list);
         }
 
-        // Code Review : Use already exist library
+        // Code Review : Use already existing library
         List<List<String>> subLists2 = ListUtils.partition(yourlist, partition);
         for (List<String> list2 : subLists2) {
             System.out.println(list2);
