@@ -2,7 +2,7 @@ package com.codekata.assignment;
 
 import java.util.Arrays;
 
-public class ArrayChallenge {
+public class MaxAndSumChallenge {
 
     public static void main(String[] args) {
         System.out.println(compareLargestAndSum(new int[]{4, 6, 23, 10, 3})); // expected output: true

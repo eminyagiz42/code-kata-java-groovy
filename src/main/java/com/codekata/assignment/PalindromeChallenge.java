@@ -2,7 +2,7 @@ package com.codekata.assignment;
 
 import java.util.LinkedList;
 
-public class isPalindromeChallenge {
+public class PalindromeChallenge {
 
     public static void main(String[] args) {
         System.out.println(isPalindrome("A war at Tarawa!")); // expected output: true
