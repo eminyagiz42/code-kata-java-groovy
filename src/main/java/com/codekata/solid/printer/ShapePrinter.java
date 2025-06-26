@@ -1,13 +1,12 @@
 package com.codekata.solid.printer;
 
-import com.codekata.solid.calculator.AreaCalculator;
 import com.codekata.solid.shape.Shape;
 
 import java.util.List;
 
 public class ShapePrinter {
 
-    public String toJson(List<Shape> shapes, List<Integer> areas) {
+    public  <T extends Shape> String toJson(List<T> shapes, List<Integer> areas) {
         StringBuilder builder = new StringBuilder();
         builder.append("{ ");
         for (int i = 0; i < shapes.size(); i++) {

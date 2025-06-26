@@ -1,5 +1,7 @@
 package com.codekata.solid.shape;
 
-public interface ThreeDimensionalShape {
+public interface ThreeDimensionalShape extends Shape {
+
     double volume();
+
 }

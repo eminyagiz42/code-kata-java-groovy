@@ -12,7 +12,6 @@ public class Cube3D implements Shape, ThreeDimensionalShape {
         return length;
     }
 
-
     @Override
     public double area() {
         return 6 * Math.pow(getLength(), 2);
