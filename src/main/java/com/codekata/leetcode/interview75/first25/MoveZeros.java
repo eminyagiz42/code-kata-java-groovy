@@ -32,6 +32,20 @@ public class MoveZeros {
         }
     }
 
+    //Second solution for move zeros question
+    private static void moveZerosBySwap(int[] nums) {
+        int temp;
+        //It has a loop from last index till index 1.
+        for (int i = nums.length -1; i > 0; i--) {
+            //  if it is zero, It will swap with next number
+            if (nums[i] == 0) {
+                temp = nums[i];
+                nums[i] = nums[i - 1];
+                nums[i - 1] = temp;
+            }
+        }
+    }
+
     /**
      * Move zeroes.
      *
