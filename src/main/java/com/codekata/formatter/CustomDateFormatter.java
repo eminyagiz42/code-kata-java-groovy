@@ -33,6 +33,26 @@ public class CustomDateFormatter {
         return StringUtils.isBlank(value) ? "" : CURRENCY_FORMAT2.format(Double.valueOf(value));
     }
 
+        public static BigDecimal formatBigDecimal(Object val, int decimal){
+        BigDecimal bigDecimal = null;
+        DecimalFormat decimalFormat = null;
+        BigDecimal arrObj = null;
+
+        if(val != null) {
+            arrObj = (BigDecimal) val;
+        }else{
+            arrObj = new BigDecimal(0);
+        }
+
+        switch (decimal){
+            case 1: decimalFormat = new DecimalFormat(CommonConstants.DECIMAL_FORMAT_1); break;
+            case 4: decimalFormat = new DecimalFormat(CommonConstants.DECIMAL_FORMAT_4); break;
+            default: decimalFormat = new DecimalFormat(CommonConstants.DECIMAL_FORMAT_2); break;
+        }
+        bigDecimal = new BigDecimal(decimalFormat.format(arrObj));
+        return bigDecimal;
+    }
+
     public static void main(String[] args) {
         System.out.println(getStartDate()); // Output: 04 Feb 2025
         System.out.println(getYourContributions());
