@@ -37,6 +37,7 @@ dependencies {
     implementation "com.google.guava:guava:${guavaVersion}"
     implementation "com.googlecode.json-simple:json-simple:${jsonSimpleVersion}"
     implementation "net.datafaker:datafaker:${datafakerVersion}"
+    implementation 'org.slf4j:slf4j-api:2.0.17'
     testImplementation "junit:junit:${junitVersion}"
 //    implementation(files(rootProject.projectDir.resolve("buildSrc/build/classes/java/main")))
 }
@@ -57,18 +58,12 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-        vendor = JvmVendorSpec.SAP
-        implementation = JvmImplementation.VENDOR_SPECIFIC
+        languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
-import com.codekata.*;
-
-task helloPath {
-    PathOfHandler.main()
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:deprecation"
 }
 
-task helloConfig {
-    CheckConfig.main()
-}
+
