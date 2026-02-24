@@ -67,6 +67,6 @@ public class CustomDateFormatter {
     public static void main(String[] args) {
         System.out.println(getStartDate()); // Output: 04 Feb 2025
         System.out.println(getYourContributions());
-        System.out.println(formatBigDecimal( new BigDecimal("0.000000000000"), 2));
+        System.out.println(formatBigDecimal( new BigDecimal("2.717500000"), 4).toPlainString());
     }
 }
