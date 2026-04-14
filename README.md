@@ -1,4 +1,9 @@
-This is personal # javaKata. I am going to practice, follow my curiosity and solve some leetcode questions.
+# javaKata
+
+[![Java CI with Tests](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml)
+[![Test Results](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YOUR_USERNAME/YOUR_GIST_ID/raw/test-results.json)](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml)
+
+This is personal javaKata. I am going to practice, follow my curiosity and solve some leetcode questions.
 
 My Java & Spring Bookmarks (Not ordered yet!)
 
