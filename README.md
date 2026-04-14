@@ -1,7 +1,9 @@
 # javaKata
 
-[![Java CI with Tests](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml)
-[![Test Results](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/YOUR_USERNAME/YOUR_GIST_ID/raw/test-results.json)](https://github.com/YOUR_USERNAME/code-kata-java-groovy/actions/workflows/test.yml)
+
+
+[![Java CI with Tests](https://github.com/eminyagiz42/code-kata-java-groovy/actions/workflows/test.yml/badge.svg)](https://github.com/eminyagiz42/code-kata-java-groovy/actions/workflows/test.yml)
+[![Test Results](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/eminyagiz42/f1b31d24a48462392a82e20aae62c081/raw/test-results.json)](https://github.com/eminyagiz42/code-kata-java-groovy/actions/workflows/test.yml)
 
 This is personal javaKata. I am going to practice, follow my curiosity and solve some leetcode questions.
 
