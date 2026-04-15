@@ -50,7 +50,6 @@ public class CodeKataTest {
     }
 
 
-/*
     @Test
     public void testFailingCase1() {
         LargerNumber largerNumber = new LargerNumber();
@@ -62,7 +61,6 @@ public class CodeKataTest {
         LargerNumber largerNumber = new LargerNumber();
         Assert.assertEquals("Expected 10 but got different", 10, 5);
     }
-    */
 
     @After
     public void after() {
