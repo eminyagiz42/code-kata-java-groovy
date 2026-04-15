@@ -16,4 +16,4 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Deploy
-      run: echo "Deploying after successful tests..."
+      run: echo "Test coverage after successful tests..."
