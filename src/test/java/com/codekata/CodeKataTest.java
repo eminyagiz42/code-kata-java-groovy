@@ -49,6 +49,18 @@ public class CodeKataTest {
         assertTrue("1000000 should be greater than 999999", largerNumber.isGreater(1000000, 999999));
     }
 
+    @Test
+    public void testFailingCase1() {
+        LargerNumber largerNumber = new LargerNumber();
+        assertTrue("This should fail: 3 is not greater than 5", largerNumber.isGreater(3, 5));
+    }
+
+    @Test
+    public void testFailingCase2() {
+        LargerNumber largerNumber = new LargerNumber();
+        Assert.assertEquals("Expected 10 but got different", 10, 5);
+    }
+
     @After
     public void after() {
         System.out.println("After Test Case");
