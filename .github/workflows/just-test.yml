@@ -1,4 +1,4 @@
-name: Tests
+name: Unit Tests
 
 on:
   push:
@@ -26,44 +26,6 @@ jobs:
     - name: Run tests with coverage
       run: mvn clean test
 
-    - name: Display Coverage Summary
-      if: always()
-      run: |
-        echo "## Code Coverage Summary" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-
-        # Extract coverage data from jacoco.csv
-        if [ -f target/site/jacoco/jacoco.csv ]; then
-          echo "| Metric | Missed | Covered | Total | Coverage % |" >> $GITHUB_STEP_SUMMARY
-          echo "|--------|--------|---------|-------|------------|" >> $GITHUB_STEP_SUMMARY
-
-          # Parse instruction coverage
-          INST_MISSED=$(awk -F',' 'NR>1 {sum+=$4} END {print sum}' target/site/jacoco/jacoco.csv)
-          INST_COVERED=$(awk -F',' 'NR>1 {sum+=$5} END {print sum}' target/site/jacoco/jacoco.csv)
-          INST_TOTAL=$((INST_MISSED + INST_COVERED))
-          INST_PCT=$(awk "BEGIN {printf \"%.2f\", ($INST_COVERED/$INST_TOTAL)*100}")
-
-          # Parse branch coverage
-          BRANCH_MISSED=$(awk -F',' 'NR>1 {sum+=$6} END {print sum}' target/site/jacoco/jacoco.csv)
-          BRANCH_COVERED=$(awk -F',' 'NR>1 {sum+=$7} END {print sum}' target/site/jacoco/jacoco.csv)
-          BRANCH_TOTAL=$((BRANCH_MISSED + BRANCH_COVERED))
-          BRANCH_PCT=$(awk "BEGIN {printf \"%.2f\", ($BRANCH_COVERED/$BRANCH_TOTAL)*100}")
-
-          # Parse line coverage
-          LINE_MISSED=$(awk -F',' 'NR>1 {sum+=$8} END {print sum}' target/site/jacoco/jacoco.csv)
-          LINE_COVERED=$(awk -F',' 'NR>1 {sum+=$9} END {print sum}' target/site/jacoco/jacoco.csv)
-          LINE_TOTAL=$((LINE_MISSED + LINE_COVERED))
-          LINE_PCT=$(awk "BEGIN {printf \"%.2f\", ($LINE_COVERED/$LINE_TOTAL)*100}")
-
-          echo "| Instructions | $INST_MISSED | $INST_COVERED | $INST_TOTAL | $INST_PCT% |" >> $GITHUB_STEP_SUMMARY
-          echo "| Branches | $BRANCH_MISSED | $BRANCH_COVERED | $BRANCH_TOTAL | $BRANCH_PCT% |" >> $GITHUB_STEP_SUMMARY
-          echo "| Lines | $LINE_MISSED | $LINE_COVERED | $LINE_TOTAL | $LINE_PCT% |" >> $GITHUB_STEP_SUMMARY
-
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "📊 **Overall Coverage: $INST_PCT%**" >> $GITHUB_STEP_SUMMARY
-        else
-          echo "⚠️ Coverage report not found!" >> $GITHUB_STEP_SUMMARY
-        fi
 
     - name: Publish Test Report
       uses: dorny/test-reporter@v1

@@ -1,11 +1,11 @@
-name: Deploy
+name: Print 
 
 on:
   workflow_run:
-    workflows: ["Tests"]
+    workflows: [ "Unit Tests"]
     types:
       - completed
-    branches: [main, master]
+    branches: [ "test/sal"]
 
 jobs:
   deploy:
@@ -15,5 +15,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Deploy
+    - name: Printing
       run: echo "Test coverage after successful tests..."
