@@ -5,7 +5,6 @@ on:
     workflows: [ "Unit Tests"]
     types:
       - completed
-    branches: [ "test/sal"]
 
 jobs:
   deploy:
